@@ -1,10 +1,6 @@
-import ML from "../assets/Reach/ML.png";
 import placement from "../assets/Reach/placement.svg";
 import UI from "../assets/images/mobile-app-ux-ui-basics.jpg";
-import GENAI_300 from "../assets/Reach/300.jpg";
-import UI_150 from "../assets/Reach/150.jpg";
-import GENAI_1200 from "../assets/Reach/1200.jpg";
-import PAY from "../assets/Reach/new.jpg";
+import UI_400 from "../assets/images/workshop_qr.jpeg";
 
 export const WorkshopContacts = [
   {
@@ -21,7 +17,7 @@ export const workshopsReach = [
     to: "AI",
     image: UI,
 
-    qr: UI_150,
+    qr: UI_400,
     venue: [
       {
         name: "PSNA College of Engineering and Technology",
@@ -37,7 +33,7 @@ export const workshopsReach = [
     // speakers: "John Doe, Jane Smith",
     moreInfo: {
       certificate: "Physical Certificate",
-      conducted_by:"Vinith Aswath A S , Software Engineer, Walmart",
+      conducted_by: "Vinith Aswath A S , Software Engineer, Walmart",
       takeaways: "Takeaways",
       time: "9:00 AM to 04:00 PM",
       date: "20th March, 2025",
@@ -53,7 +49,6 @@ export const workshopsReach = [
       { id: 2, name: "Padmasharan", phone: "+91 9585612262" },
     ],
   },
- 
 ];
 
 // export   const abacusWorkshops = [

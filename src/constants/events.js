@@ -5,7 +5,7 @@ import img4 from "../assets/images/pentacode.png";
 import img5 from "../assets/images/ML Mania.png";
 import img6 from "../assets/images/ospc.png";
 import img7 from "../assets/images/family feud.png";
-import img8 from "../assets/images/amazon.png";
+import img8 from "../assets/images/chess_qr.jpeg";
 // Contacts for the EventPage
 
 export const EventContacts = [
@@ -36,7 +36,7 @@ export const events = [
           "Get ready for a high-intensity programming contest where sharp minds compete to crack the toughest coding challenges! Tackle complex problems involving data structures and algorithms, and showcase your speed, skill, and innovation in this high-stakes battle of logic and code!",
         image: img4, // Replace with your image path
         path: "/events/ospc",
-        Qr: true,
+
         team: "2-3 members",
         Date: "22nd and 23rd March 2025",
         prize: "Rs 7k",
@@ -473,6 +473,7 @@ export const events = [
         time: "01:30 PM to 04:00 PM",
         Date: "23rd March 2025",
         team: "Individual",
+        Qr: img8,
         entry_fee: "Rs.30",
         description:
           "Checkmate Chronicles is the ultimate test of strategy, logic, and precision! Outsmart your opponents in intense chess battles where every move shapes your path to victory. Sharpen your tactics, anticipate your rival’s next move, and compete for the title of Chess Champion!",
