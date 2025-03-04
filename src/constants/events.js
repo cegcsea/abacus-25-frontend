@@ -473,6 +473,7 @@ export const events = [
         time: "01:30 PM to 04:00 PM",
         Date: "23rd March 2025",
         team: "Individual",
+        entry_fee: "Rs.30",
         description:
           "Checkmate Chronicles is the ultimate test of strategy, logic, and precision! Outsmart your opponents in intense chess battles where every move shapes your path to victory. Sharpen your tactics, anticipate your rival’s next move, and compete for the title of Chess Champion!",
         image: img7, // Replace with your image path
@@ -678,30 +679,7 @@ export const events = [
           },
         ],
       },
-      {
-        id: 17,
-        title: "CHESS!",
-        description: "",
-        image: img1, // Replace with your image path
-        Date: "22-23 March 2025",
-        team: "2 members",
-        prize: "Rs 30   (need to change price as entry fee)",
-        path: "/events/chess",
-        to: "gcl",
-        contact: [
-          {
-            id: 1,
-            name: "Hariharan A",
-            phone: "77084 62392",
-          },
-          {
-            id: 2,
-            name: "Ajai Krishna T.S",
-            phone: "70107 07652",
-          },
-        ],
-      },
     ],
-    path: "/events/technical-events", // Path to the event page
+    path: "/events/pre-events", // Path to the event page
   },
 ];

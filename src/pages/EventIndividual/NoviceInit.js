@@ -98,6 +98,7 @@ const NoviceInit = () => {
                       <strong>Date:</strong> {selectedEvent.Date}
                     </p>
                     {selectedEvent.time ?<p><strong>Time:</strong> {selectedEvent.time}</p>:""}
+                    {selectedEvent.entry_fee ?<p><strong>Entry_Fee:</strong> {selectedEvent.entry_fee}</p>:""}
                 <p>
                   <strong>Prize:</strong> {selectedEvent.prize || "N/A"}
                 </p>
