@@ -4,7 +4,7 @@ import { LoaderData } from "../context/loaderContext";
 import { UserData } from "../context/userContext";
 import Loader from "../components/Loader/Loader";
 import toast from "react-hot-toast";
-import price from "../assets/images/price.png";
+import price from "../assets/images/chess_qr.jpeg";
 import { events } from "../constants/events";
 function EventPayment() {
   const { isLoading } = LoaderData();
@@ -75,11 +75,7 @@ function EventPayment() {
 
   return (
     <div className="flex flex-col items-center justify-center bg-black text-white p-5 relative min-h-screen mt-16 pt-6">
-      {!isMobile && (
-        <div className="w-[30%] flex justify-center items-center">
-          <img src={price} alt="price-bg" />
-        </div>
-      )}
+    
 
       <div className="w-full max-w-md bg-gray-900 border-2 border-[#8a1818] rounded-lg shadow-lg p-6 md:p-8">
         <h2 className="text-2xl md:text-3xl font-bold text-center border-b-2 border-[#8a1818] pb-2">
@@ -164,11 +160,7 @@ function EventPayment() {
         </form>
       </div>
 
-      {!isMobile && (
-        <div className="w-[30%] flex justify-center items-center rotate-180">
-          <img src={price} alt="price-bg" />
-        </div>
-      )}
+     
     </div>
   );
 }

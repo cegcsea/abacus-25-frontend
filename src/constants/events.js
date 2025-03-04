@@ -578,6 +578,6 @@ export const events = [
         ],
       },
     ],
-    path: "/events/technical-events", // Path to the event page
+    path: "/events/e-events", // Path to the event page
   },
 ];

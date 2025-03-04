@@ -25,6 +25,7 @@ import { useEffect } from "react";
 import Login from "./components/Login";
 import BulkPayment from "./pages/BulkPayment";
 import IndividualSponsors from "./components/IndividualSponsors";
+import EventPayment from "./pages/EventPayment";
 const App = () => {
   const { isMenuOpen, setIsMenuOpen } = UserData();
   const { isLoading, setIsLoading } = LoaderData();
@@ -74,6 +75,8 @@ const App = () => {
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/events/:id" element={<NoviceInit />} />
           <Route path="/sponsors" element={<IndividualSponsors />} />
+          <Route path="/eventpay" element={<EventPayment/>} />
+
         </Routes>
       </Suspense>
     </BrowserRouter>
