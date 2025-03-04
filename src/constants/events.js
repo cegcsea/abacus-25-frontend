@@ -55,7 +55,7 @@ export const events = [
             title: "Round 2 – The Coding Showdown",
             content:
               "The finalists will face off in an intense coding battle on HackerRank, where they must solve 5-6 challenging DSA problems within the given time. This round will test not only problem-solving skills but also efficiency, logic, and coding prowess. Do you have what it takes to emerge as the ultimate programming champion?",
-              duration: "2 hours",
+            duration: "2 hours",
             time: "1:00 pm – 4:00 pm",
             // venue: "Main Building Room No 238",
           },
@@ -131,7 +131,8 @@ export const events = [
         rounds: [
           {
             title: "Round 1 - The ML Quiz Challenge",
-            content: "Gear up for a stimulating multiple-choice quiz that will test your understanding of core Machine Learning concepts! This round will challenge participants with questions on ML algorithms, data preprocessing, model evaluation, and key theoretical concepts. Only those with a solid grasp of ML fundamentals will advance to the next stage!",
+            content:
+              "Gear up for a stimulating multiple-choice quiz that will test your understanding of core Machine Learning concepts! This round will challenge participants with questions on ML algorithms, data preprocessing, model evaluation, and key theoretical concepts. Only those with a solid grasp of ML fundamentals will advance to the next stage!",
             duration: "30 minutes",
             time: "09:00 AM to 12:30 PM",
             // venue: "Main Building Room No 238",
@@ -173,7 +174,8 @@ export const events = [
         rounds: [
           {
             title: "Round 1 - The Tech Trivia Challenge",
-            content: "Kickstart the competition with a thrilling multiple-choice quiz that will put your technical knowledge to the test! This round covers a mix of algorithms, cryptography, programming languages (C, C++, Python), and Linux system fundamentals. Speed and accuracy are crucial—only the sharpest minds will advance to the next level!",
+            content:
+              "Kickstart the competition with a thrilling multiple-choice quiz that will put your technical knowledge to the test! This round covers a mix of algorithms, cryptography, programming languages (C, C++, Python), and Linux system fundamentals. Speed and accuracy are crucial—only the sharpest minds will advance to the next level!",
             duration: "40 minutes",
             time: "09:00 AM to 12:00 PM",
             // venue: "Main Building Room No 238",
@@ -252,8 +254,9 @@ export const events = [
         rounds: [
           {
             title: "Round 1 - The Recruitment Test",
-            content: "Step into the shoes of a job applicant and take on a rigorous screening test designed to evaluate your aptitude, programming knowledge, and problem-solving skills. This round will challenge you with a mix of logical reasoning, quantitative aptitude, and coding questions—just like the first step of a real-world hiring process. Only the most promising candidates will move forward to the interview round!",
-            duration:  "50 mins (Online)",
+            content:
+              "Step into the shoes of a job applicant and take on a rigorous screening test designed to evaluate your aptitude, programming knowledge, and problem-solving skills. This round will challenge you with a mix of logical reasoning, quantitative aptitude, and coding questions—just like the first step of a real-world hiring process. Only the most promising candidates will move forward to the interview round!",
+            duration: "50 mins (Online)",
             time: "09:00 AM to 12:30 PM",
             // venue: "Main Building Room No 238",
           },
@@ -261,7 +264,7 @@ export const events = [
             title: "Round 2 - The Mock Interview",
             content:
               "Face the ultimate test in a realistic mock interview setting! Participants will be evaluated on their technical expertise, problem-solving approach, and communication skills. Expect coding challenges, scenario-based questions, and real-world problem-solving discussions, all designed to simulate an actual job interview experience. Are you ready to impress and prove you're hire-ready?",
-            duration:  "35 mins",
+            duration: "35 mins",
             time: "01:30 PM to 03:00 PM",
             // venue: "Main Building Room No 238",
           },
@@ -293,7 +296,8 @@ export const events = [
         rounds: [
           {
             title: "Round 1 - The Debugging IQ Test",
-            content: "Get ready to put your analytical skills to the test! This multiple-choice quiz will challenge participants with questions on debugging, code analysis, and programming logic. Identify errors, predict outputs, and spot the flaws in given code snippets. Only those with a keen eye for detail and a solid understanding of debugging will advance to the next round!",
+            content:
+              "Get ready to put your analytical skills to the test! This multiple-choice quiz will challenge participants with questions on debugging, code analysis, and programming logic. Identify errors, predict outputs, and spot the flaws in given code snippets. Only those with a keen eye for detail and a solid understanding of debugging will advance to the next round!",
             duration: "40 minutes",
             time: "09:00 AM to 12:30 PM",
             // venue: "Main Building Room No 238",
@@ -351,7 +355,8 @@ export const events = [
         rounds: [
           {
             title: "Round 1 - The Ultimate Chase",
-            content: "Gear up for an exciting adventure where every clue brings you closer to the final treasure! Teams will decode hints leading to hidden locations across the campus. At each spot, a new clue awaits, challenging your wit, teamwork, and speed. The hunt continues until the final mystery is cracked. The team that completes the journey in the shortest time will emerge as the ultimate treasure hunters! Do you have what it takes to outsmart and outrun the competition?",
+            content:
+              "Gear up for an exciting adventure where every clue brings you closer to the final treasure! Teams will decode hints leading to hidden locations across the campus. At each spot, a new clue awaits, challenging your wit, teamwork, and speed. The hunt continues until the final mystery is cracked. The team that completes the journey in the shortest time will emerge as the ultimate treasure hunters! Do you have what it takes to outsmart and outrun the competition?",
             duration: "40 minutes",
             time: "10:00 AM to 4:00 PM",
             // venue: "Main Building Room No 238",
@@ -392,7 +397,8 @@ export const events = [
         rounds: [
           {
             title: "Round 1 - The Cricket Quiz Showdown",
-            content: "Kick off the auction with a thrilling multiple-choice quiz that tests your knowledge of Cricket and the IPL! From legendary matches to player stats and team histories, this round will challenge your expertise in the game. Only the most knowledgeable participants will earn an advantage in the next round!",
+            content:
+              "Kick off the auction with a thrilling multiple-choice quiz that tests your knowledge of Cricket and the IPL! From legendary matches to player stats and team histories, this round will challenge your expertise in the game. Only the most knowledgeable participants will earn an advantage in the next round!",
             duration: "35 minutes",
             time: "09:00 AM to 12:00 PM",
             // venue: "Main Building Room No 238",
@@ -441,7 +447,8 @@ export const events = [
         rounds: [
           {
             title: "Round 1 - The Ultimate AI Challenge",
-            content: "Participants choose a themed set and solve puzzles to find 5 hidden words. Using only 10 prompts, they must craft inputs to make ChatGPT generate these words without using clues as prompts. Lifeline: Sacrifice 1 prompt for a hint. Scoring: 10 pts per correct word, 5 pts per correct AI-generated word, 5 bonus pts per unused prompt. ",
+            content:
+              "Participants choose a themed set and solve puzzles to find 5 hidden words. Using only 10 prompts, they must craft inputs to make ChatGPT generate these words without using clues as prompts. Lifeline: Sacrifice 1 prompt for a hint. Scoring: 10 pts per correct word, 5 pts per correct AI-generated word, 5 bonus pts per unused prompt. ",
             duration: "30 minutes",
             time: "09:00 AM to 12:00 PM",
             // venue: "Main Building Room No 238",
@@ -482,7 +489,8 @@ export const events = [
         rounds: [
           {
             title: "Round 1 - The Ultimate Chess Knockout",
-            content: "Players will compete in a knockout-style chess tournament, where only the sharpest minds advance. Each match is a battle of strategy, foresight, and precision—one wrong move can cost victory! The last player standing claims the title of Chess Champion. Do you have what it takes to checkmate your way to glory?",
+            content:
+              "Players will compete in a knockout-style chess tournament, where only the sharpest minds advance. Each match is a battle of strategy, foresight, and precision—one wrong move can cost victory! The last player standing claims the title of Chess Champion. Do you have what it takes to checkmate your way to glory?",
             duration: "Subject to Player Count",
             time: "10:00 AM to 3:00 PM",
             // venue: "Main Building Room No 238",
@@ -501,46 +509,46 @@ export const events = [
           },
         ],
       },
-      {
-        id: 12,
-        title: "Collab with Quizzers Anonymous",
-        // time: "01:30 PM to 04:00 PM",
-        // Date: "23rd March 2025",
-        // team: "Individual",
-        // description:
-        //   "Checkmate Chronicles is the ultimate test of strategy, logic, and precision! Outsmart your opponents in intense chess battles where every move shapes your path to victory. Sharpen your tactics, anticipate your rival’s next move, and compete for the title of Chess Champion!",
-        image: img7, // Replace with your image path
-        path: "/events/chatgpt-pulse",
-        rules: `• Participants answer survey-based questions on topics like Books, Food, Movies, Lifestyle, and Technology. Responses are ranked (1 = most popular, 7 = least popular).
-              • Teams compete to guess the most popular answers.
-              • Buzzers decide who answers first.
-              • Correct guesses earn points based on the popularity ranking.
-              • Three consecutive wrong guesses result in negative points, and the chance passes to the other team.
-              • Each round includes 10 questions.
-              • Top 3 teams with the highest total scores win.`,
-        to: "chatgpt-pulse",
-        prize: "Rs 3.5k",
-        // rounds: [
-        //   {
-        //     title: "Round 1 - The Ultimate Chess Knockout",
-        //     content: "Players will compete in a knockout-style chess tournament, where only the sharpest minds advance. Each match is a battle of strategy, foresight, and precision—one wrong move can cost victory! The last player standing claims the title of Chess Champion. Do you have what it takes to checkmate your way to glory?",
-        //     duration: "Subject to Player Count",
-        //     time: "10:00 AM to 3:00 PM",
-        //   },
-        // ],
-        contact: [
-          {
-            id: 1,
-            name: "Infancy P",
-            phone: "90473 66527",
-          },
-          {
-            id: 2,
-            name: "Harini S",
-            phone: "93633 49994",
-          },
-        ],
-      },
+      // {
+      //   id: 12,
+      //   title: "Collab with Quizzers Anonymous",
+      //   // time: "01:30 PM to 04:00 PM",
+      //   // Date: "23rd March 2025",
+      //   // team: "Individual",
+      //   // description:
+      //   //   "Checkmate Chronicles is the ultimate test of strategy, logic, and precision! Outsmart your opponents in intense chess battles where every move shapes your path to victory. Sharpen your tactics, anticipate your rival’s next move, and compete for the title of Chess Champion!",
+      //   image: img7, // Replace with your image path
+      //   path: "/events/chatgpt-pulse",
+      //   rules: `• Participants answer survey-based questions on topics like Books, Food, Movies, Lifestyle, and Technology. Responses are ranked (1 = most popular, 7 = least popular).
+      //         • Teams compete to guess the most popular answers.
+      //         • Buzzers decide who answers first.
+      //         • Correct guesses earn points based on the popularity ranking.
+      //         • Three consecutive wrong guesses result in negative points, and the chance passes to the other team.
+      //         • Each round includes 10 questions.
+      //         • Top 3 teams with the highest total scores win.`,
+      //   to: "chatgpt-pulse",
+      //   prize: "Rs 3.5k",
+      //   // rounds: [
+      //   //   {
+      //   //     title: "Round 1 - The Ultimate Chess Knockout",
+      //   //     content: "Players will compete in a knockout-style chess tournament, where only the sharpest minds advance. Each match is a battle of strategy, foresight, and precision—one wrong move can cost victory! The last player standing claims the title of Chess Champion. Do you have what it takes to checkmate your way to glory?",
+      //   //     duration: "Subject to Player Count",
+      //   //     time: "10:00 AM to 3:00 PM",
+      //   //   },
+      //   // ],
+      //   contact: [
+      //     {
+      //       id: 1,
+      //       name: "Infancy P",
+      //       phone: "90473 66527",
+      //     },
+      //     {
+      //       id: 2,
+      //       name: "Harini S",
+      //       phone: "93633 49994",
+      //     },
+      //   ],
+      // },
     ],
     // Add more events
     path: "/events/non-technical-events", // Path to the event page
@@ -550,7 +558,7 @@ export const events = [
     image: img3, // Event image
     event: [
       {
-        id: 11,
+        id: 12,
         title: "OLPC",
         description:
           "OLPC is the ultimate arena for online programming contests, where sharp minds battle against the clock to solve intricate challenges packed with complex data structures and algorithms. Speed, precision, and problem-solving skills will determine who emerges victorious in this high-stakes digital showdown!",
@@ -575,7 +583,7 @@ export const events = [
       },
 
       {
-        id: 12,
+        id: 13,
         title: "LIGHTS, CAMERA, REEL!",
         description:
           "Unleash your creativity and showcase your talent in this ultimate reels competition! Whether it’s dance, drama, comedy, or art—hit record, shine bright, and make your moment go viral! ",
@@ -599,7 +607,7 @@ export const events = [
         ],
       },
       {
-        id: 13,
+        id: 14,
         title: "WAR OF THE RACKETS ",
         description:
           "War of the Rackets is an electrifying badminton showdown exclusively for girls! Battle it out in intense, fast-paced matches where agility, precision, and strategy take center stage. Smash your way to victory and claim your spot at the top in this ultimate test of skill and endurance!",
@@ -623,7 +631,7 @@ export const events = [
         ],
       },
       {
-        id: 14,
+        id: 15,
         title: "Grand Cricket League (GCL)",
         description:
           "Grand Cricket League is the ultimate battle of skill, strategy, and endurance! Compete in high-energy matches where every run matters, every wicket counts, and teamwork paves the path to victory. Step onto the pitch, showcase your batting, bowling, and fielding prowess, and chase the glory of becoming the champions!",
@@ -647,7 +655,7 @@ export const events = [
         ],
       },
       {
-        id: 15,
+        id: 16,
         title: "CSEA SUPER LEAGUE (CSL) - Kick, Pass, Goal!",
         description:
           "Lace up your boots and get ready for an electrifying intra-departmental football showdown! Form your dream team, showcase your dribbling, passing, and scoring skills, and battle your way to glory in this fast-paced tournament of teamwork, strategy, and passion for the game!",
@@ -671,7 +679,7 @@ export const events = [
         ],
       },
       {
-        id: 16,
+        id: 17,
         title: "CHESS!",
         description: "",
         image: img1, // Replace with your image path
