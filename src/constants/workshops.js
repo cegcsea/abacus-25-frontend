@@ -4,12 +4,21 @@ import UI from "../assets/images/mobile-app-ux-ui-basics.jpg";
 import GENAI_300 from "../assets/Reach/300.jpg";
 import UI_150 from "../assets/Reach/150.jpg";
 import GENAI_1200 from "../assets/Reach/1200.jpg";
-import PAY from "../assets/Reach/new.jpg"
+import PAY from "../assets/Reach/new.jpg";
+
+export const WorkshopContacts = [
+  {
+    id: 1,
+    name: "Pooja",
+    phone: "+91 7558121642",
+  },
+  { id: 2, name: "Ragul", phone: "+91 9361469631" },
+];
 
 export const workshopsReach = [
   {
-    title: "Design for Impact: Power of UX",
-    to: "UI-UX",
+    title: "Emergence of AI Engineers and Evolution of Vibe coding",
+    to: "AI",
     image: UI,
 
     qr: UI_150,
@@ -27,12 +36,13 @@ export const workshopsReach = [
       "Participants are required to bring laptops.No prior knowledge is needed.",
     // speakers: "John Doe, Jane Smith",
     moreInfo: {
-      certificate: "E-Certificate",
+      certificate: "Physical Certificate",
+      conducted_by:"Vinith Aswath A S , Software Engineer, Walmart",
       takeaways: "Takeaways",
-      time: "9:00 AM to 12:00 PM",
-      date: "21st February, 2025",
-      // venue: "X hall, EEE Department",
-      entryFee: "Rs. 150/-",
+      time: "9:00 AM to 04:00 PM",
+      date: "20th March, 2025",
+      venue: "X hall, EEE Department",
+      entryFee: "Rs. 400/-",
     },
     contact: [
       {
@@ -43,42 +53,7 @@ export const workshopsReach = [
       { id: 2, name: "Padmasharan", phone: "+91 9585612262" },
     ],
   },
-  {
-    title: "Workshop on Generative AI",
-    to: "genAI",
-    image: ML,
-    bulkBooking: PAY,
-    qr: GENAI_300,
-    venue: [
-      {
-        name: "PSNA College of Engineering and Technology",
-        time: "09:30 AM to 04:00 PM",
-        location: "CSE Department, Second Floor Lab",
-      },
-    ],
-    code: 2,
-    content:
-      "Ignite your curiosity in Generative AI!. This one-day workshop provides a comprehensive introduction to Generative AI, focusing on its fundamentals, applications, and practical implementation. Designed for beginners, the session will help participants understand the transformative potential of Generative AI in various domains through engaging lectures and hands-on activities.",
-    prerequistes:
-      "No prior machine learning experience is required. Just bring your curiosity, and let's make the most of this short but impactful ML adventure!",
-    // speakers: "John Doe, Jane Smith",
-    moreInfo: {
-      certificate: "E-Certificate",
-      takeaways: "Takeaways",
-      time: "9:30 AM to 04:00 PM",
-      date: "21st February, 2025",
-      // venue: "X hall, EEE Department",
-      entryFee: "Rs. 300/-",
-    },
-    contact: [
-      {
-        id: 1,
-        name: "Ajai Krishna",
-        phone: "+91 7010707652",
-      },
-      { id: 2, name: "Nikhil Prasanna", phone: "+91 6379066510" },
-    ],
-  },
+ 
 ];
 
 // export   const abacusWorkshops = [

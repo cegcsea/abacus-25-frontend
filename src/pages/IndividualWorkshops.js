@@ -121,6 +121,12 @@ const IndividualWorkshops = () => {
                   {info.certificate}
                 </td>
               </tr>
+              <tr className="bg-[#2e2e2e]">
+                <td className="border-b py-2 px-4 text-[#aaa]">Instructor</td>
+                <td className="border-b py-2 px-4 text-[#aaa]">
+                  {info.conducted_by}
+                </td>
+              </tr>
               <tr className="bg-[#1d1d1d]">
                 <td className="border-b py-2 px-4 text-[#aaa]">Time</td>
                 <td className="border-b py-2 px-4 text-[#aaa]">{info.time}</td>
