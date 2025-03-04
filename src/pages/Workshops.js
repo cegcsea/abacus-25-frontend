@@ -60,7 +60,7 @@ const Workshops = () => {
             </div>
           ))}
         </div>
-        <Session />
+        {/* <Session /> */}
         
        
       </div>
