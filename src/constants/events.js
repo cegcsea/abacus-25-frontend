@@ -19,7 +19,7 @@ export const EventContacts = [
   {
     id: 4,
     name: "Infancy P",
-    phone: "",
+    phone: "+91 9047366527",
   },
 ];
 
@@ -424,7 +424,7 @@ export const events = [
       },
       {
         id: 11,
-        title: "Checkmate Chronicles (Collab with Castle Red)",
+        title: "Checkmate Chronicles",
         time: "01:30 PM to 04:00 PM",
         Date: "20 February 2025",
         team: "Individual",
@@ -455,7 +455,7 @@ export const events = [
         ],
       },
     ],
-    // Add more events 
+    // Add more events
     path: "/events/non-technical-events", // Path to the event page
   },
   {
@@ -586,8 +586,7 @@ export const events = [
       {
         id: 16,
         title: "CHESS!",
-        description:
-          "",
+        description: "",
         image: img1, // Replace with your image path
         Date: "20 February 2025",
         team: "5 members (Intra Dept)",
