@@ -162,10 +162,10 @@ const Profile = () => {
             <div className="pr-4 pt-5 lg:pt-1 ">
               <TbHanger className="icon" />
             </div>
-            <div>
+            {/* <div>
               You are currently in JJCET , attending our
               marvellous REACH'25!
-            </div>
+            </div> */}
           </p>
         </div>
 

@@ -2,7 +2,7 @@ import {React,useRef} from "react";
 import "../styles/about.css";
 import "../styles/global.css";
 //import { Bubble } from "../components/Bubble";
-import "../assets/images/logo.jpeg";
+import "../assets/images/log copy.png";
 //import { bubbles } from "../constants/bubbles";
 import About from "../components/About";
 import Sponsors from "../components/Sponsors";

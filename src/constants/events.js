@@ -37,9 +37,8 @@ export const events = [
         image: img4, // Replace with your image path
         path: "/events/ospc",
         Qr: true,
-
         team: "2-3 members",
-        Date: "22nd March 2025",
+        Date: "22nd and 23rd March 2025",
         prize: "Rs 7k",
         to: "ospc",
         rounds: [
@@ -53,10 +52,11 @@ export const events = [
             // venue: "Main Building Room No 238",
           },
           {
-            title: "Round 2 – Decode the Pentacode",
+            title: "Round 2 – The Coding Showdown",
             content:
-              "Solve a challenging DSA problem with the help of hints unlocked from tasks in four other domains. Complete all tasks strategically to crack the final DSA problem and secure victory!",
-            time: "01:30 PM to 03:00 PM",
+              "The finalists will face off in an intense coding battle on HackerRank, where they must solve 5-6 challenging DSA problems within the given time. This round will test not only problem-solving skills but also efficiency, logic, and coding prowess. Do you have what it takes to emerge as the ultimate programming champion?",
+              duration: "2 hours",
+            time: "1:00 pm – 4:00 pm",
             // venue: "Main Building Room No 238",
           },
         ],
@@ -82,22 +82,23 @@ export const events = [
         image: img5,
         path: "/events/byte-begin",
         team: "1-2 members",
-        Date: "21st February 2025",
+        Date: "22nd March 2025",
         prize: "Rs 7k",
         to: "byte-begin",
         rounds: [
           {
-            title: "Round 1 – ML Conquer: Quiz Blitz",
+            title: "Round 1 – The Brainstorm Challenge",
             content:
-              "Test your theoretical knowledge of machine learning algorithms, concepts, and applications in a fast-paced quiz. Answer quickly and accurately to secure your spot in the next round.",
+              "Kick off your coding journey with an exciting multiple-choice quiz that tests your general aptitude, logical reasoning, and programming fundamentals in C, Python, and Java. From problem-solving puzzles to logo guessing challenges, this round will assess your analytical thinking and coding basics in a fun and engaging way. Only the top problem solvers will advance to the next stage!",
             duration: "30 minutes",
             time: "09:00 AM to 12:30 PM",
             // venue: "Main Building Room No 238",
           },
           {
-            title: "Round 2 – ML Conquer: Model Challenge",
+            title: "Round 2 – The Code Sprint",
             content:
-              "Build a powerful ML model to solve a real-world problem. Showcase your coding skills, data analysis, and model optimization techniques to emerge as the ultimate ML conqueror.",
+              "In the final round, participants will compete in a beginner-friendly competitive programming contest on HackerRank. Solve a series of easy-level CP problems that test your logic, efficiency, and coding skills. This is your chance to put your programming knowledge into action and prove your potential as a future coding pro!",
+            duration: "2 hours",
             time: "01:30 PM to 03:00 PM",
             // venue: "Main Building Room No 238",
           },
@@ -124,22 +125,23 @@ export const events = [
         image: img6, // Replace with your image path
         path: "/events/brainwave.ml",
         team: "1-2 members",
-        Date: "21st February 2025",
+        Date: "22nd March 2025",
         prize: "Rs 5k",
         to: "brainwave.ml",
         rounds: [
           {
-            title: "Round 1",
-            content: "MCQ on Data Structures, Algorithms, and OOPs concepts",
+            title: "Round 1 - The ML Quiz Challenge",
+            content: "Gear up for a stimulating multiple-choice quiz that will test your understanding of core Machine Learning concepts! This round will challenge participants with questions on ML algorithms, data preprocessing, model evaluation, and key theoretical concepts. Only those with a solid grasp of ML fundamentals will advance to the next stage!",
             duration: "30 minutes",
             time: "09:00 AM to 12:30 PM",
             // venue: "Main Building Room No 238",
           },
           {
-            title: "Round 2",
+            title: "Round 2 - The Model Building Challenge",
             content:
-              "Solve challenging programming questions based on DSA and algorithms",
-            time: "01:30 PM to 03:00 PM",
+              "In this hands-on round, participants will be given a dataset and tasked with building a machine learning model to derive meaningful insights or make accurate predictions. Creativity, technical skills, and problem-solving abilities will be put to the test as participants develop, train, and fine-tune their models. Can you craft the most efficient and innovative solution to win the challenge?",
+            duration: "1 hour 30 minutes",
+            time: "01:00 PM to 04:00 PM",
             // venue: "Main Building Room No 238",
           },
         ],
@@ -165,22 +167,23 @@ export const events = [
         image: img6, // Replace with your image path
         path: "/events/ctrl+escape",
         team: "2-3 members",
-        Date: "21st February 2025",
+        Date: "23rd March 2025",
         prize: "Rs 7k",
         to: "ctrl+escape",
         rounds: [
           {
-            title: "Round 1",
-            content: "MCQ on Data Structures, Algorithms, and OOPs concepts",
-            duration: "30 minutes",
-            time: "09:00 AM to 12:30 PM",
+            title: "Round 1 - The Tech Trivia Challenge",
+            content: "Kickstart the competition with a thrilling multiple-choice quiz that will put your technical knowledge to the test! This round covers a mix of algorithms, cryptography, programming languages (C, C++, Python), and Linux system fundamentals. Speed and accuracy are crucial—only the sharpest minds will advance to the next level!",
+            duration: "40 minutes",
+            time: "09:00 AM to 12:00 PM",
             // venue: "Main Building Room No 238",
           },
           {
-            title: "Round 2",
+            title: "Round 2 - The Code Conqueror",
             content:
-              "Solve challenging programming questions based on DSA and algorithms",
-            time: "01:30 PM to 03:00 PM",
+              "In the final round, participants will battle it out in a high-stakes coding contest on HackerRank. Solve 5-6 challenging DSA problems that will test your problem-solving skills, logic, and efficiency. It’s a race against time—do you have what it takes to crack the code and emerge victorious?",
+            duration: "2 hours",
+            time: "01:00 PM to 04:00 PM",
             // venue: "Main Building Room No 238",
           },
         ],
@@ -197,46 +200,44 @@ export const events = [
           },
         ],
       },
-      {
-        id: 5,
-        title: "PAPER PRESENTATION",
-        description:
-          "Paper Presentation is an intellectual platform where participants showcase their innovative ideas and research on cutting-edge topics. This event challenges individuals to present their findings with clarity, creativity, and confidence, demonstrating both technical depth and communication excellence.",
-        image: img6, // Replace with your image path
-        path: "/events/paper-presentation",
-        team: "Two or three members",
-        Date: "21st February 2025",
-        prize: "Rs 1.5k+",
-        to: "paper-presentation",
-        rounds: [
-          {
-            title: "Round 1",
-            content: "MCQ on Data Structures, Algorithms, and OOPs concepts",
-            duration: "30 minutes",
-            time: "09:00 AM to 12:30 PM",
-            // venue: "Main Building Room No 238",
-          },
-          {
-            title: "Round 2",
-            content:
-              "Solve challenging programming questions based on DSA and algorithms",
-            time: "01:30 PM to 03:00 PM",
-            // venue: "Main Building Room No 238",
-          },
-        ],
-        contact: [
-          {
-            id: 1,
-            name: "Gautham",
-            phone: "+1 234 567 890",
-          },
-          {
-            id: 2,
-            name: "Ganesh",
-            phone: "+1 234 567 890",
-          },
-        ],
-      },
+      // {
+      //   id: 5,
+      //   title: "PAPER PRESENTATION",
+      //   description:
+      //     "Paper Presentation is an intellectual platform where participants showcase their innovative ideas and research on cutting-edge topics. This event challenges individuals to present their findings with clarity, creativity, and confidence, demonstrating both technical depth and communication excellence.",
+      //   image: img6, // Replace with your image path
+      //   path: "/events/paper-presentation",
+      //   team: "Two or three members",
+      //   Date: "21st February 2025",
+      //   prize: "Rs 1.5k+",
+      //   to: "paper-presentation",
+      //   rounds: [
+      //     {
+      //       title: "Round 1",
+      //       content: "MCQ on Data Structures, Algorithms, and OOPs concepts",
+      //       duration: "30 minutes",
+      //       time: "09:00 AM to 12:30 PM",
+      //     },
+      //     {
+      //       title: "Round 2",
+      //       content:
+      //         "Solve challenging programming questions based on DSA and algorithms",
+      //       time: "01:30 PM to 03:00 PM",
+      //     },
+      //   ],
+      //   contact: [
+      //     {
+      //       id: 1,
+      //       name: "Gautham",
+      //       phone: "+1 234 567 890",
+      //     },
+      //     {
+      //       id: 2,
+      //       name: "Ganesh",
+      //       phone: "+1 234 567 890",
+      //     },
+      //   ],
+      // },
       {
         id: 6,
         title: "READY.SET.HIRE!",
@@ -245,21 +246,22 @@ export const events = [
         image: img6, // Replace with your image path
         path: "/events/ready-set-hire",
         team: "Individual",
-        Date: "21st February 2025",
+        Date: "23rd March 2025",
         prize: "Rs 7k",
         to: "ready-set-hire",
         rounds: [
           {
-            title: "Round 1",
-            content: "MCQ on Data Structures, Algorithms, and OOPs concepts",
-            duration: "30 minutes",
+            title: "Round 1 - The Recruitment Test",
+            content: "Step into the shoes of a job applicant and take on a rigorous screening test designed to evaluate your aptitude, programming knowledge, and problem-solving skills. This round will challenge you with a mix of logical reasoning, quantitative aptitude, and coding questions—just like the first step of a real-world hiring process. Only the most promising candidates will move forward to the interview round!",
+            duration:  "50 mins (Online)",
             time: "09:00 AM to 12:30 PM",
             // venue: "Main Building Room No 238",
           },
           {
-            title: "Round 2",
+            title: "Round 2 - The Mock Interview",
             content:
-              "Solve challenging programming questions based on DSA and algorithms",
+              "Face the ultimate test in a realistic mock interview setting! Participants will be evaluated on their technical expertise, problem-solving approach, and communication skills. Expect coding challenges, scenario-based questions, and real-world problem-solving discussions, all designed to simulate an actual job interview experience. Are you ready to impress and prove you're hire-ready?",
+            duration:  "35 mins",
             time: "01:30 PM to 03:00 PM",
             // venue: "Main Building Room No 238",
           },
@@ -285,22 +287,23 @@ export const events = [
         image: img6, // Replace with your image path
         path: "/events/glitch-snitch",
         team: "1-2 members",
-        Date: "21st February 2025",
+        Date: "23rd March 2025",
         prize: "Rs 5k",
         to: "glitch-snitch",
         rounds: [
           {
-            title: "Round 1",
-            content: "MCQ on Data Structures, Algorithms, and OOPs concepts",
-            duration: "30 minutes",
+            title: "Round 1 - The Debugging IQ Test",
+            content: "Get ready to put your analytical skills to the test! This multiple-choice quiz will challenge participants with questions on debugging, code analysis, and programming logic. Identify errors, predict outputs, and spot the flaws in given code snippets. Only those with a keen eye for detail and a solid understanding of debugging will advance to the next round!",
+            duration: "40 minutes",
             time: "09:00 AM to 12:30 PM",
             // venue: "Main Building Room No 238",
           },
           {
-            title: "Round 2",
+            title: "Round 2 - The Bug Hunt",
             content:
-              "Solve challenging programming questions based on DSA and algorithms",
-            time: "01:30 PM to 03:00 PM",
+              "Now, it's time to get hands-on! Participants will be given programs riddled with bugs—logical errors, syntax issues, and unexpected behaviors. Your task? Identify and fix these errors to make the program run correctly and produce the expected results. Speed, precision, and problem-solving prowess will determine who emerges as the ultimate 'Glitch Snitch'!",
+            duration: "1 hour 30 minutes",
+            time: "01:00 PM to 04:00 PM",
             // venue: "Main Building Room No 238",
           },
         ],
@@ -323,14 +326,14 @@ export const events = [
   {
     title: "Non Technical Events",
     image: img2, // Event image,
-    Date: "20 February 2025",
+    Date: "22nd March 2025",
 
     event: [
       {
         id: 8,
         title: "TREASURE HUNT",
         time: "01:30 PM to 04:00 PM",
-        Date: "20 February 2025",
+        Date: "23rd March 2025",
         team: "2-3 members",
         description:
           "Embark on an exhilarating campus-wide Treasure Hunt! Solve clever clues, uncover hidden locations, and race against time to crack the final mystery. Teams will navigate through a series of challenges, with the fastest ones claiming victory. Get ready for a thrilling adventure of wits, strategy, and speed!",
@@ -345,6 +348,15 @@ export const events = [
               • Top 3 teams with the highest total scores win.`,
         to: "treasure-hunt",
         prize: "Rs 2.5k",
+        rounds: [
+          {
+            title: "Round 1 - The Ultimate Chase",
+            content: "Gear up for an exciting adventure where every clue brings you closer to the final treasure! Teams will decode hints leading to hidden locations across the campus. At each spot, a new clue awaits, challenging your wit, teamwork, and speed. The hunt continues until the final mystery is cracked. The team that completes the journey in the shortest time will emerge as the ultimate treasure hunters! Do you have what it takes to outsmart and outrun the competition?",
+            duration: "40 minutes",
+            time: "10:00 AM to 4:00 PM",
+            // venue: "Main Building Room No 238",
+          },
+        ],
         contact: [
           {
             id: 1,
@@ -362,7 +374,7 @@ export const events = [
         id: 9,
         title: "IPL AUCTION",
         time: "01:30 PM to 04:00 PM",
-        Date: "20 February 2025",
+        Date: "22nd March 2025",
         team: "1-3 members",
         description:
           "IPL Auction gives you the ultimate chance to build your dream team! Strategize, bid smartly, and assemble a winning squad that can dominate the tournament. Choose wisely—every pick counts in this high-stakes game of skill and strategy!",
@@ -377,6 +389,23 @@ export const events = [
               • Top 3 teams with the highest total scores win.`,
         to: "ipl-auction",
         prize: "Rs 2.5k",
+        rounds: [
+          {
+            title: "Round 1 - The Cricket Quiz Showdown",
+            content: "Kick off the auction with a thrilling multiple-choice quiz that tests your knowledge of Cricket and the IPL! From legendary matches to player stats and team histories, this round will challenge your expertise in the game. Only the most knowledgeable participants will earn an advantage in the next round!",
+            duration: "35 minutes",
+            time: "09:00 AM to 12:00 PM",
+            // venue: "Main Building Room No 238",
+          },
+          {
+            title: "Round 2 - The Grand IPL Auction",
+            content:
+              "Time to put your strategic skills to the test! Participants will enter a high-stakes auction where they must bid smartly to build the ultimate IPL squad. With a limited budget, choosing the right players is crucial. Balance star power, team chemistry, and game strategy to assemble a winning team. Do you have what it takes to create a championship-worthy squad?",
+            duration: "2 hours",
+            time: "01:00 PM to 04:00 PM",
+            // venue: "Main Building Room No 238",
+          },
+        ],
         contact: [
           {
             id: 1,
@@ -394,7 +423,7 @@ export const events = [
         id: 10,
         title: "CHATGPT PULSE",
         time: "01:30 PM to 04:00 PM",
-        Date: "20 February 2025",
+        Date: "23rd March 2025",
         team: "1-2 members",
         description:
           "Put your prompt engineering skills to the test in this exciting AI challenge! With only a few chances, craft the perfect prompts to steer ChatGPT toward a specific target word. Unleash your creativity, refine your logic, and master the art of AI communication in this fun and brain-teasing competition.",
@@ -409,6 +438,15 @@ export const events = [
               • Top 3 teams with the highest total scores win.`,
         to: "chatgpt-pulse",
         prize: "Rs 2k",
+        rounds: [
+          {
+            title: "Round 1 - The Ultimate AI Challenge",
+            content: "Participants choose a themed set and solve puzzles to find 5 hidden words. Using only 10 prompts, they must craft inputs to make ChatGPT generate these words without using clues as prompts. Lifeline: Sacrifice 1 prompt for a hint. Scoring: 10 pts per correct word, 5 pts per correct AI-generated word, 5 bonus pts per unused prompt. ",
+            duration: "30 minutes",
+            time: "09:00 AM to 12:00 PM",
+            // venue: "Main Building Room No 238",
+          },
+        ],
         contact: [
           {
             id: 1,
@@ -426,7 +464,7 @@ export const events = [
         id: 11,
         title: "Checkmate Chronicles",
         time: "01:30 PM to 04:00 PM",
-        Date: "20 February 2025",
+        Date: "23rd March 2025",
         team: "Individual",
         description:
           "Checkmate Chronicles is the ultimate test of strategy, logic, and precision! Outsmart your opponents in intense chess battles where every move shapes your path to victory. Sharpen your tactics, anticipate your rival’s next move, and compete for the title of Chess Champion!",
@@ -441,6 +479,15 @@ export const events = [
               • Top 3 teams with the highest total scores win.`,
         to: "chatgpt-pulse",
         prize: "Rs 3.5k",
+        rounds: [
+          {
+            title: "Round 1 - The Ultimate Chess Knockout",
+            content: "Players will compete in a knockout-style chess tournament, where only the sharpest minds advance. Each match is a battle of strategy, foresight, and precision—one wrong move can cost victory! The last player standing claims the title of Chess Champion. Do you have what it takes to checkmate your way to glory?",
+            duration: "Subject to Player Count",
+            time: "10:00 AM to 3:00 PM",
+            // venue: "Main Building Room No 238",
+          },
+        ],
         contact: [
           {
             id: 1,
@@ -451,6 +498,46 @@ export const events = [
             id: 2,
             name: "Dinesh S",
             phone: "93603 80769",
+          },
+        ],
+      },
+      {
+        id: 12,
+        title: "Collab with Quizzers Anonymous",
+        // time: "01:30 PM to 04:00 PM",
+        // Date: "23rd March 2025",
+        // team: "Individual",
+        // description:
+        //   "Checkmate Chronicles is the ultimate test of strategy, logic, and precision! Outsmart your opponents in intense chess battles where every move shapes your path to victory. Sharpen your tactics, anticipate your rival’s next move, and compete for the title of Chess Champion!",
+        image: img7, // Replace with your image path
+        path: "/events/chatgpt-pulse",
+        rules: `• Participants answer survey-based questions on topics like Books, Food, Movies, Lifestyle, and Technology. Responses are ranked (1 = most popular, 7 = least popular).
+              • Teams compete to guess the most popular answers.
+              • Buzzers decide who answers first.
+              • Correct guesses earn points based on the popularity ranking.
+              • Three consecutive wrong guesses result in negative points, and the chance passes to the other team.
+              • Each round includes 10 questions.
+              • Top 3 teams with the highest total scores win.`,
+        to: "chatgpt-pulse",
+        prize: "Rs 3.5k",
+        // rounds: [
+        //   {
+        //     title: "Round 1 - The Ultimate Chess Knockout",
+        //     content: "Players will compete in a knockout-style chess tournament, where only the sharpest minds advance. Each match is a battle of strategy, foresight, and precision—one wrong move can cost victory! The last player standing claims the title of Chess Champion. Do you have what it takes to checkmate your way to glory?",
+        //     duration: "Subject to Player Count",
+        //     time: "10:00 AM to 3:00 PM",
+        //   },
+        // ],
+        contact: [
+          {
+            id: 1,
+            name: "Infancy P",
+            phone: "90473 66527",
+          },
+          {
+            id: 2,
+            name: "Harini S",
+            phone: "93633 49994",
           },
         ],
       },
@@ -468,7 +555,7 @@ export const events = [
         description:
           "OLPC is the ultimate arena for online programming contests, where sharp minds battle against the clock to solve intricate challenges packed with complex data structures and algorithms. Speed, precision, and problem-solving skills will determine who emerges victorious in this high-stakes digital showdown!",
         image: img1, // Replace with your image path
-        Date: "20 February 2025",
+        Date: "22-23 March 2025",
         team: "Individual",
         prize: "Rs 4k",
         path: "/events/olpc",
@@ -493,7 +580,7 @@ export const events = [
         description:
           "Unleash your creativity and showcase your talent in this ultimate reels competition! Whether it’s dance, drama, comedy, or art—hit record, shine bright, and make your moment go viral! ",
         image: img1, // Replace with your image path
-        Date: "20 February 2025",
+        Date: "22-23 March 2025",
         team: "Individual",
         prize: "Rs 1.5k",
         path: "/events/lights-camera-reel",
@@ -517,7 +604,7 @@ export const events = [
         description:
           "War of the Rackets is an electrifying badminton showdown exclusively for girls! Battle it out in intense, fast-paced matches where agility, precision, and strategy take center stage. Smash your way to victory and claim your spot at the top in this ultimate test of skill and endurance!",
         image: img1, // Replace with your image path
-        Date: "20 February 2025",
+        Date: "22-23 March 2025",
         team: "Individual (Inter dept)",
         prize: "Rs 1.5k",
         path: "/events/war-of-the-rackets",
@@ -541,7 +628,7 @@ export const events = [
         description:
           "Grand Cricket League is the ultimate battle of skill, strategy, and endurance! Compete in high-energy matches where every run matters, every wicket counts, and teamwork paves the path to victory. Step onto the pitch, showcase your batting, bowling, and fielding prowess, and chase the glory of becoming the champions!",
         image: img1, // Replace with your image path
-        Date: "20 February 2025",
+        Date: "22-23 March 2025",
         team: "11 members (Intra Dept)",
         prize: "Rs 2k",
         path: "/events/gcl",
@@ -565,7 +652,7 @@ export const events = [
         description:
           "Lace up your boots and get ready for an electrifying intra-departmental football showdown! Form your dream team, showcase your dribbling, passing, and scoring skills, and battle your way to glory in this fast-paced tournament of teamwork, strategy, and passion for the game!",
         image: img1, // Replace with your image path
-        Date: "20 February 2025",
+        Date: "22-23 March 2025",
         team: "5 members (Intra Dept)",
         prize: "Rs 2k",
         path: "/events/gcl",
@@ -588,8 +675,8 @@ export const events = [
         title: "CHESS!",
         description: "",
         image: img1, // Replace with your image path
-        Date: "20 February 2025",
-        team: "5 members (Intra Dept)",
+        Date: "22-23 March 2025",
+        team: "2 members",
         prize: "Rs 30   (need to change price as entry fee)",
         path: "/events/chess",
         to: "gcl",
