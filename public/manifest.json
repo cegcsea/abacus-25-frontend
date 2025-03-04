@@ -8,15 +8,21 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logoblack.png",
+      "src": "logoblack-192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "logoblack.png",
+      "src": "logoblack-512.png",
       "type": "image/png",
       "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logoblack-1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
       "purpose": "any maskable"
     }
   ],
