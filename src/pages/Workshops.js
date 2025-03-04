@@ -2,12 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { workshopsReach as workshops } from "../constants/workshops";
 import Session from "../components/Session";
+import { WorkshopContacts } from "../constants/workshops";
 import { LoaderData } from "../context/loaderContext";
 import Loader from "../components/Loader/Loader";
+import Contact from "../components/Contact";
 const Workshops = () => {
   const navigate = useNavigate();
   const white = "#fff";
-
 
   const { isLoading } = LoaderData();
 
@@ -15,7 +16,7 @@ const Workshops = () => {
     return <Loader />;
   }
   return (
-    <div className="bg-black min-h-screen flex justify-center items-center pt-8 ">
+    <div className="bg-black min-h-screen flex justify-center items-center pt-8  ">
       <div className="w-full max-w-7xl px-4 ">
         <h2
           style={{ color: white }}
@@ -24,7 +25,7 @@ const Workshops = () => {
           Workshops
         </h2>
 
-        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 ">
+        <div className="flex justify-center items-center mb-10">
           {workshops.map((workshop) => (
             <div
               key={workshop.id}
@@ -61,8 +62,7 @@ const Workshops = () => {
           ))}
         </div>
         {/* <Session /> */}
-        
-       
+        <Contact contacts={WorkshopContacts} />
       </div>
     </div>
   );

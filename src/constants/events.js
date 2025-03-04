@@ -11,10 +11,16 @@ import img8 from "../assets/images/amazon.png";
 export const EventContacts = [
   {
     id: 1,
-    name: "Nikhil Prasanna",
-    phone: "+91 6379066510",
+    name: "Ajai Krishna T S",
+    phone: "+91 7010707652",
   },
-  { id: 2, name: "Padmasharan", phone: "+91 9585612262" },
+  { id: 2, name: "Dinesh Sundarrajan", phone: "+91 9585612262" },
+  { id: 3, name: "Harini S", phone: "" },
+  {
+    id: 4,
+    name: "Infancy P",
+    phone: "",
+  },
 ];
 
 // List of events
@@ -155,7 +161,7 @@ export const events = [
           },
         ],
       },
-      
+
       {
         id: 4,
         title: "CTRL+ESCAPE",
@@ -402,7 +408,7 @@ export const events = [
         path: "/events/olpc",
         to: "olpc",
       },
-      
+
       {
         id: 12,
         title: "LIGHTS, CAMERA, REEL!",
@@ -430,7 +436,6 @@ export const events = [
         path: "/events/gcl",
         to: "gcl",
       },
-    
     ],
     path: "/events/technical-events", // Path to the event page
   },

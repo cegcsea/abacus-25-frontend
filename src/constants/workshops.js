@@ -6,6 +6,15 @@ import UI_150 from "../assets/Reach/150.jpg";
 import GENAI_1200 from "../assets/Reach/1200.jpg";
 import PAY from "../assets/Reach/new.jpg";
 
+export const WorkshopContacts = [
+  {
+    id: 1,
+    name: "Pooja",
+    phone: "+91 7558121642",
+  },
+  { id: 2, name: "Ragul", phone: "+91 9361469631" },
+];
+
 export const workshopsReach = [
   {
     title: "Emergence of AI Engineers and Evolution of Vibe coding",
