@@ -15,12 +15,12 @@ export const EventContacts = [
     phone: "+91 7010707652",
   },
   { id: 2, name: "Dinesh Sundarrajan", phone: "+91 9360380769" },
-  { id: 3, name: "Harini S", phone: "+91 9363349994" },
-  {
-    id: 4,
-    name: "Infancy P",
-    phone: "+91 9047366527",
-  },
+  // { id: 3, name: "Harini S", phone: "+91 9363349994" },
+  // {
+  //   id: 4,
+  //   name: "Infancy P",
+  //   phone: "+91 9047366527",
+  // },
 ];
 
 // List of events

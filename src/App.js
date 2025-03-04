@@ -65,6 +65,7 @@ const App = () => {
           <Route path="/register/:email/:token" element={<RegisterDetails />} />
           <Route path="/events" element={<EventPage />} />{" "}
           <Route path="/events/technical-events" element={<TechnicalPage />} />
+          <Route path="/events/pre-events" element={<TechnicalPage />} />
           <Route
             path="/events/non-technical-events"
             element={<TechnicalPage />}

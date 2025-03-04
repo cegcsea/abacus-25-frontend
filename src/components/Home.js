@@ -70,7 +70,7 @@ const Home = ({scrollToContact}) => {
           >
             <img
               className="logo"
-              src={require("../assets/images/logo copy.png")}
+              src={require("../assets/images/final abacus.png")}
               alt="Abacus Logo"
             />
             <div className="home_bgcircle1__MiYGt !my-[340px] md:!my-68 xl:!my-8 lg:!my-68"></div>
@@ -97,7 +97,7 @@ const Home = ({scrollToContact}) => {
         >
           <motion.div className="first" variants={slideFromLeft}>
             <img
-              src={require("../assets/images/logo.jpeg")}
+              src={require("../assets/images/final abacus.png")}
               alt="Abacus Logo"
               className="h-[0] w-[0] !mx-auto lg:mx-20 lg:h-[35%] lg:w-[45%] xl:h-[85%] xl:w-[65%] "
             />

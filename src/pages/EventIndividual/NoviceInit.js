@@ -8,6 +8,11 @@ import { UserData } from "../../context/userContext.js";
 import { LoaderData } from "../../context/loaderContext.js";
 import Loader from "../../components/Loader/Loader.jsx";
 const NoviceInit = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0); // Small delay to ensure DOM is rendered
+  }, []);
   const navigate = useNavigate();
   const location = useLocation();
   const { id } = useParams(); // Ensure the route has a dynamic :id parameter
@@ -78,13 +83,14 @@ const NoviceInit = () => {
                   Internship &lt;~&gt;
                 </button>
               )}
-              {selectedEvent.rounds?.length>0  &&( <button 
-                onClick={() => handleTabClick("rounds")}
-                className={activeTab === "rounds" ? "active" : ""}
-              >
-                Rounds &lt;~&gt;
-              </button>
-  )}
+              {selectedEvent.rounds?.length > 0 && (
+                <button
+                  onClick={() => handleTabClick("rounds")}
+                  className={activeTab === "rounds" ? "active" : ""}
+                >
+                  Rounds &lt;~&gt;
+                </button>
+              )}
             </div>
 
             {/* Description Tab */}
@@ -95,10 +101,22 @@ const NoviceInit = () => {
                   <strong>Team members:</strong> {selectedEvent.team || "N/A"}
                 </p>
                 <p>
-                      <strong>Date:</strong> {selectedEvent.Date}
-                    </p>
-                    {selectedEvent.time ?<p><strong>Time:</strong> {selectedEvent.time}</p>:""}
-                    {selectedEvent.entry_fee ?<p><strong>Entry_Fee:</strong> {selectedEvent.entry_fee}</p>:""}
+                  <strong>Date:</strong> {selectedEvent.Date}
+                </p>
+                {selectedEvent.time ? (
+                  <p>
+                    <strong>Time:</strong> {selectedEvent.time}
+                  </p>
+                ) : (
+                  ""
+                )}
+                {selectedEvent.entry_fee ? (
+                  <p>
+                    <strong>Entry_Fee:</strong> {selectedEvent.entry_fee}
+                  </p>
+                ) : (
+                  ""
+                )}
                 <p>
                   <strong>Prize:</strong> {selectedEvent.prize || "N/A"}
                 </p>
@@ -136,7 +154,7 @@ const NoviceInit = () => {
                     <p>
                       <strong>Duration:</strong> {round.duration}
                     </p>
-                    
+
                     <p>
                       <strong>Time:</strong> {round.time}
                     </p>
@@ -148,25 +166,25 @@ const NoviceInit = () => {
               </div>
             )}
             <div className="flex justify-center">
-            {isAuth && !isRegistered && (
-              <button
-                className="m-3 w-fit border border-[#c72727] px-4 py-2 text-white duration-150 hover:bg-[#fb525233] "
-                onClick={handleRegister}
-              >
-                Register{"<"}~{">"}
-              </button>
-            )}
+              {isAuth && !isRegistered && (
+                <button
+                  className="m-3 w-fit border border-[#c72727] px-4 py-2 text-white duration-150 hover:bg-[#fb525233] "
+                  onClick={handleRegister}
+                >
+                  Register{"<"}~{">"}
+                </button>
+              )}
             </div>
-          <div className="flex justify-center">
-  {!isAuth && (
-    <button
-      className="m-3 w-fit border border-[#c72727] px-4 py-2 text-white duration-150 hover:bg-[#ff4d4d]"
-      onClick={() => navigate("/login")}
-    >
-      Login to Register{"<"}~{">"}
-    </button>
-  )}
-</div>
+            <div className="flex justify-center">
+              {!isAuth && (
+                <button
+                  className="m-3 w-fit border border-[#c72727] px-4 py-2 text-white duration-150 hover:bg-[#ff4d4d]"
+                  onClick={() => navigate("/login")}
+                >
+                  Login to Register{"<"}~{">"}
+                </button>
+              )}
+            </div>
 
             {isRegistered && (
               <p className="p-2 w-full sm:w-fit flex justify-center items-center text-white text-lg font-semibold text-gray border rounded-lg border-[#c72727] bg-slate-800 mx-auto">
@@ -179,9 +197,9 @@ const NoviceInit = () => {
         </div>
       </div>
 
-       {selectedEvent.contact?.length > 0 && (
+      {selectedEvent.contact?.length > 0 && (
         <Contact contacts={selectedEvent.contact} />
-      )} 
+      )}
     </div>
   );
 };

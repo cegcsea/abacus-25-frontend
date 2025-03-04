@@ -5,9 +5,14 @@ import "../styles/Event.css";
 import Contact from "../components/Contact";
 import { LoaderData } from "../context/loaderContext";
 import Loader from "../components/Loader/Loader";
+import { useEffect } from "react";
 const EventPage = () => {
   const { isLoading } = LoaderData();
-
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0); // Small delay to ensure DOM is rendered
+  }, []);
   if (isLoading) {
     return <Loader />;
   }

@@ -207,10 +207,7 @@
   transition: all 0.1s ease-in-out;
 }
 
-.second button:hover {
-  display: block;
-  filter: drop-shadow(0 0 5px #fffdef);
-}
+
 
 .main .border {
   height: 250px;
@@ -271,7 +268,6 @@
   }
   .initial .theme {
     color: rgb(255, 255, 255);
-    font-size: 20px;
     font-weight: 400;
     text-align: center;
     text-decoration: none;
@@ -279,6 +275,7 @@
     margin-top: 20px;
   }
 
+  
   .button {
     margin-bottom: 20px;
   }
@@ -300,9 +297,7 @@
   .about .second {
     padding-left: 0;
   }
-  .second button {
-    margin-left: 10px;
-  }
+ 
   .theme {
     z-index: 10;
   }
@@ -341,7 +336,7 @@
   .initial .theme {
     padding: 10px;
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 20px;
     border: 1px solid black;
     z-index: 10;
   }

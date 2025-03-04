@@ -4,7 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #121212; 
-    color: #f4f4f4; 
+    color: #f4f4f4;
+        scroll-behavior: smooth;  /* Optional: Makes scrolling smooth */
+        overflow-x: hidden;        /* Prevents horizontal scrolling */
+      
+      
 }
 
 .heading {
