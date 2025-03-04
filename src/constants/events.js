@@ -484,7 +484,7 @@ export const events = [
               • Three consecutive wrong guesses result in negative points, and the chance passes to the other team.
               • Each round includes 10 questions.
               • Top 3 teams with the highest total scores win.`,
-        to: "chatgpt-pulse",
+        to: "checkmate-chronicles",
         prize: "Rs 3.5k",
         rounds: [
           {
