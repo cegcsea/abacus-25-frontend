@@ -26,12 +26,12 @@ export const workshopsReach = [
       {
         name: "PSNA College of Engineering and Technology",
         time: "09:00 AM to 12:00 PM",
-        location: "CSE Department, First Floor Lab",
+        location: "Venue: Hall of 1960, Department of Chemistry, CEG",
       },
     ],
     code: 1,
     content:
-      "This half-day workshop delves into the world of User Experience (UX) design, exploring its core principles and how psychology influences user behavior. Participants will learn to differentiate between UI and UX, understand the importance of accessibility and inclusive design, and analyze how successful apps leverage UX psychology. A hands-on activity will allow participants to apply these concepts by redesigning a user flow for a mobile app, fostering a practical understanding of creating impactful and user-centered designs.",
+      "The Emergence of AI Engineers and Evolution of Vibe Coding is a full-day workshop designed to explore the rapidly evolving role of AI engineers and the transformative shift in coding paradigms. Participants will gain hands-on experience in AI-driven development, understand how machine learning is reshaping software engineering, and explore the concept of Vibe Coding—a new approach that emphasizes intuitive, real-time, and adaptive coding techniques. Through interactive sessions, expert talks, and live demonstrations, this workshop will equip attendees with the skills to seamlessly integrate AI into their workflows and stay ahead in the dynamic tech landscape.",
     prerequisites:
       "Participants are required to bring laptops.No prior knowledge is needed.",
     // speakers: "John Doe, Jane Smith",
@@ -41,7 +41,7 @@ export const workshopsReach = [
       takeaways: "Takeaways",
       time: "9:00 AM to 04:00 PM",
       date: "20th March, 2025",
-      venue: "X hall, EEE Department",
+      venue: "Hall of 1960, Department of Chemistry, CEG",
       entryFee: "Rs. 400/-",
     },
     contact: [
