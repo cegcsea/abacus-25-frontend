@@ -10,8 +10,9 @@ import { Link } from "react-router-dom";
 const Sponsors = () => {
   const sponsors = [
     { image: spon1, name: "Motorq", desc: "Title Sponsor" },
-    { image: img7, name: "Interview buddy", desc: "Coupon Sponsor" },
+
     { image: spon3, name: "TMB", desc: "REACH'25 Sponsor" },
+    { image: img7, name: "Interview buddy", desc: "Coupon Sponsor" },
   ];
 
   return (

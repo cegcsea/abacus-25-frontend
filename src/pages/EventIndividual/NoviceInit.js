@@ -46,8 +46,12 @@ const NoviceInit = () => {
   // Handle event registration
   const handleRegister = async (e) => {
     e.preventDefault();
-    //console.log(typeof selectedEvent.id);
-    eventRegister({ eventId: Number(selectedEvent.id) });
+    if (selectedEvent.formLink) {
+      // If the event has a form link, open it in a new tab
+      window.open(selectedEvent.formLink, "_blank");
+    } else {
+      eventRegister({ eventId: Number(selectedEvent.id) });
+    }
   };
   const { isLoading } = LoaderData();
 

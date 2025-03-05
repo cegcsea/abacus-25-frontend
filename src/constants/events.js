@@ -603,8 +603,10 @@ export const events = [
         Date: "22-23 March 2025",
         team: "Individual",
         prize: "Rs 1.5k",
+        formLink: "https://forms.gle/GfJJbjS1LhxBuZYEA",
         path: "/events/lights-camera-reel",
         to: "lights-camera-reel",
+
         contact: [
           {
             id: 1,
@@ -651,7 +653,7 @@ export const events = [
         Date: "22-23 March 2025",
         team: "11 members (Intra Dept)",
         prize: "Rs 2k",
-        link: "https://forms.gle/H5GXgcX9vWW4ero9A",
+        formLink: "https://forms.gle/H5GXgcX9vWW4ero9A",
         path: "/events/gcl",
         to: "gcl",
         contact: [
@@ -676,8 +678,9 @@ export const events = [
         Date: "22-23 March 2025",
         team: "5 members (Intra Dept)",
         prize: "Rs 2k",
-        path: "/events/gcl",
-        to: "gcl",
+        path: "/events/csl",
+        to: "csl",
+        formLink: "https://forms.gle/SUjUj2p9PZVmrMo67",
         contact: [
           {
             id: 1,
