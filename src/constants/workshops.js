@@ -1,5 +1,5 @@
 import placement from "../assets/Reach/placement.svg";
-import UI from "../assets/images/mobile-app-ux-ui-basics.jpg";
+import UI from "../assets/images/ai.webp";
 import UI_400 from "../assets/images/workshop_qr.jpeg";
 
 export const WorkshopContacts = [
