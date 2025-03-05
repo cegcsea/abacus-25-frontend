@@ -8,11 +8,6 @@ import { UserData } from "../../context/userContext.js";
 import { LoaderData } from "../../context/loaderContext.js";
 import Loader from "../../components/Loader/Loader.jsx";
 const NoviceInit = () => {
-  useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0); // Small delay to ensure DOM is rendered
-  }, []);
   const navigate = useNavigate();
   const location = useLocation();
   const { id } = useParams(); // Ensure the route has a dynamic :id parameter
@@ -110,16 +105,9 @@ const NoviceInit = () => {
                 ) : (
                   ""
                 )}
-                {selectedEvent.entry_fee ? (
-                  <p>
-                    <strong>Entry_Fee:</strong> {selectedEvent.entry_fee}
-                  </p>
-                ) : (
-                  ""
-                )}
-                <p>
+                {/* <p>
                   <strong>Prize:</strong> {selectedEvent.prize || "N/A"}
-                </p>
+                </p> */}
               </div>
             )}
 
