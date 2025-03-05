@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import { useLocation } from "react-router-dom";
 import "../styles/Sponsorinner.css";
@@ -11,7 +11,7 @@ import img3 from "../assets/Sponsors/tmb.png";
 import img4 from "../assets/Sponsors/rootquotient.png";
 import img5 from "../assets/Sponsors/e2w.png";
 import img6 from "../assets/Sponsors/valor.png";
-
+import img7 from "../assets/Sponsors/int_buddy.png";
 const sponsors = [
   {
     name: "MOTORQ - Title Sponsor",
@@ -21,13 +21,6 @@ const sponsors = [
     website: "https://motorq.com/",
   },
   {
-    name: "APPIAN - Events Sponsor",
-    logo: img2,
-    description:
-      "Appian is a software company that automates business processes. The Appian AI Process Platform includes everything you need to design, automate, and optimize even the most complex processes, from start to finish. The world's most innovative organizations trust Appian to improve their workflows, unify data, and optimize operations—resulting in better growth and superior customer experiences.",
-    website: "https://www.tmbnet.in/",
-  },
-  {
     name: "TMB - Reach'25 Sponsor",
     logo: img3,
     description:
@@ -35,25 +28,11 @@ const sponsors = [
     website: "https://companyC.com",
   },
   {
-    name: "ROOTQUOTIENT - Technology Partner",
-    logo: img4,
+    name: "Interview buddy - Coupon Partner",
+    logo: img7,
     description:
-      "RootQuotient is a product engineering company that provides custom software development services. The company was founded in 2019 and has offices in Toronto, Canada, Chennai, India, and London, UK. RootQuotient specializes in web and mobile app development for enterprises and startups across industries. The company focuses on innovation, quality, and client success.",
-    website: "https://www.rootquotient.com/",
-  },
-  {
-    name: "E2W STUDY - Educational Sponsor",
-    logo: img5,
-    description:
-      "E2W STUDY was founded with a mission to bring world-class education closer to our students. Since our inception, we have helped more than 2700+ students and professionals realize their dreams of studying abroad and settling in overseas countries. We are here to help students to realize their dream of studying in UK , Europe , Canada , Australia and Singapore.",
-    website: "https://e2wstudy.com/",
-  },
-  {
-    name: "VALOR PAY - Intern Partner",
-    logo: img6,
-    description:
-      "Valor offers innovative, advanced, and secure all-in-one payment technology solutions for ISOs, merchants, and new business owners. Their commitment to excellence means continually improving software systems and payment devices to provide us with the gold standard for intelligent, hassle-free transactions. In addition to being cost-efficient and intelligent, their value-added features and reliable service support ensure that they are the ideal partner for business growth.",
-    website: "https://valorpaytech.com/",
+      "Interview Buddy is an online platform that helps students and job seekers prepare for interviews through live mock interview sessions with industry experts. Their platform provides real-time feedback, personalized guidance, and valuable insights to boost confidence and improve interview performance. With Interview Buddy, candidates can practice interviews in a simulated environment and gain the skills needed to succeed in their job search.",
+    website: "https://interviewbuddy.net/",
   },
 ];
 
@@ -74,7 +53,7 @@ const IndividualSponsors = () => {
   return (
     <div className="bg-black total">
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <div style={{ backgroundColor: "#000"}}>
+      <div style={{ backgroundColor: "#000" }}>
         <div className="head mt-0">
           <h1 style={{ textAlign: "center", color: "#fff", marginTop: "50px" }}>
             Sponsors

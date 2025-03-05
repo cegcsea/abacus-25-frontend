@@ -4,7 +4,7 @@ import img3 from "../assets/images/preevnt.jpg";
 import img4 from "../assets/images/pentacode.png";
 import img5 from "../assets/images/ML Mania.png";
 import img6 from "../assets/images/ospc.png";
-import img7 from "../assets/images/family feud.png";
+import img7 from "../assets/images/th.webp";
 import img8 from "../assets/images/amazon.png";
 import img9 from "../assets/images/ctrlesc.jpg";
 import img10 from "../assets/images/img10.jpg";
@@ -25,12 +25,12 @@ export const EventContacts = [
     phone: "+91 7010707652",
   },
   { id: 2, name: "Dinesh Sundarrajan", phone: "+91 9360380769" },
-  // { id: 3, name: "Harini S", phone: "+91 9363349994" },
-  // {
-  //   id: 4,
-  //   name: "Infancy P",
-  //   phone: "+91 9047366527",
-  // },
+  { id: 3, name: "Harini S", phone: "+91 9363349994" },
+  {
+    id: 4,
+    name: "Infancy P",
+    phone: "+91 9047366527",
+  },
 ];
 
 // List of events
