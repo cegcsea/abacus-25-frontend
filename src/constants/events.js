@@ -18,7 +18,6 @@ import img17 from "../assets/images/img17.jpg";
 import img18 from "../assets/images/img18.jpg";
 import img20 from "../assets/images/img20.jpg";
 
-
 export const EventContacts = [
   {
     id: 1,
@@ -488,7 +487,7 @@ export const events = [
         entry_fee: "Rs.30",
         description:
           "Checkmate Chronicles is the ultimate test of strategy, logic, and precision! Outsmart your opponents in intense chess battles where every move shapes your path to victory. Sharpen your tactics, anticipate your rival’s next move, and compete for the title of Chess Champion!",
-        image: img7, // Replace with your image path
+        image: img14, // Replace with your image path
         path: "/events/checkmate-chronicles",
         rules: `• Participants answer survey-based questions on topics like Books, Food, Movies, Lifestyle, and Technology. Responses are ranked (1 = most popular, 7 = least popular).
               • Teams compete to guess the most popular answers.
