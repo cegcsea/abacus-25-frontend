@@ -1,15 +1,14 @@
-import React, { use, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import "../../styles/Intern.css";
-import { useNavigate, useLocation, useParams } from "react-router-dom";
+import { useNavigate,  useParams } from "react-router-dom";
 import Contact from "../../components/Contact.js";
-import img4 from "../../assets/images/internship.png";
+//import img4 from "../../assets/images/internship.png";
 import { events } from "../../constants/events.js";
 import { UserData } from "../../context/userContext.js";
 import { LoaderData } from "../../context/loaderContext.js";
 import Loader from "../../components/Loader/Loader.jsx";
 const NoviceInit = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   const { id } = useParams(); // Ensure the route has a dynamic :id parameter
   const { userEvents, isAuth, eventRegister, getEvents } = UserData();
   //const selectedEvent = events.find((event) => event.to === id);
@@ -22,7 +21,7 @@ const NoviceInit = () => {
 
   useEffect(() => {
     getEvents();
-  }, [userEvents]);
+  }, []);
 
   const [activeTab, setActiveTab] = useState("description");
   if (!selectedEvent) {

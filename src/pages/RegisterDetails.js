@@ -15,29 +15,30 @@ function RegisterDetails() {
   const [formData, setFormData] = useState({
     name: "",
     college: "",
-    hostCollege: "",
-    accomodation:false,
+    //hostCollege: "",
+    accomodation: false,
     dept: "",
     year: "",
     mobile: "",
+    referralCode: "",
     password: "",
     confirmPassword: "",
   });
-  const hostCollege = "J.J. College of Engineering and Technology,Tiruchirappalli";
-  const optionsHostCollege = [
-    {
-      label: "J.J. College of Engineering and Technology,Tiruchirappalli",
-      value: "J.J. College of Engineering and Technology,Tiruchirappalli",
-    },
-    // {
-    //   label: "Anna University",
-    //   value: "Anna University",
-    // },
-    // {
-    //   label: "IIT Madras",
-    //   value: "IIT Madras",
-    // },
-  ];
+  //const hostCollege = "J.J. College of Engineering and Technology,Tiruchirappalli";
+  // const optionsHostCollege = [
+  //   {
+  //     label: "J.J. College of Engineering and Technology,Tiruchirappalli",
+  //     value: "J.J. College of Engineering and Technology,Tiruchirappalli",
+  //   },
+  //   // {
+  //   //   label: "Anna University",
+  //   //   value: "Anna University",
+  //   // },
+  //   // {
+  //   //   label: "IIT Madras",
+  //   //   value: "IIT Madras",
+  //   // },
+  // ];
 
   const optionsYear = [
     { label: "First year", value: "1" },
@@ -85,18 +86,19 @@ function RegisterDetails() {
     //   mobile: formData.mobile,
     //   password: formData.password,
     // });
-    
+
     register(
       {
         name: formData.name,
         email: email,
         token: token,
         college: formData.college,
-        hostCollege: hostCollege,
-        accomodation:formData.accomodation,
+        //hostCollege: hostCollege,
+        accomodation: formData.accomodation,
         dept: formData.dept,
         year: parseInt(formData.year),
         mobile: formData.mobile,
+        referralCode: formData.referralCode,
         password: formData.password,
       },
       navigate
@@ -136,22 +138,18 @@ function RegisterDetails() {
             required
           />
 
-           <select
+          {/* <select
             className="p-2 outline-none border border-[#c53939] text-[18px] bg-[#1d1d1d]"
             value={formData.hostCollege}
             onChange={(e) => handleSelectChange("hostCollege", e.target.value)}
             disabled
             required
           >
-            {/* <option value="" disabled>
-              Select Host College
-            </option> */}
             {optionsHostCollege.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
-              </option>
-            ))}
-          </select> 
+              </option
+          </select> */}
           <select
             className="p-2 outline-none border border-[#c53939] text-[18px] bg-[#1d1d1d]"
             value={
@@ -170,15 +168,15 @@ function RegisterDetails() {
                   : null
               )
             }
-            disabled
+            //disabled
             required
           >
             {/* <option value="" disabled>
               Accommodation required?
             </option> */}
-            {/* <option key="Yes" value={true}>
+            <option key="Yes" value={true}>
               Yes
-            </option> */}
+            </option>
             <option key="No" value={false}>
               No
             </option>
@@ -218,6 +216,15 @@ function RegisterDetails() {
             value={formData.mobile}
             onChange={handleMobileChange}
             required
+          />
+          <input
+            type="text"
+            name="referralCode"
+            placeholder="referralCode"
+            className="p-2 outline-none border border-[#c53939] text-[18px] bg-[#1d1d1d]"
+            value={formData.referralCode}
+            onChange={handleChange}
+            
           />
 
           <div className="flex items-center border border-[#c53939]">
