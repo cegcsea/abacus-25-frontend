@@ -120,6 +120,12 @@ const NoviceInit = () => {
                 <p>
                   <strong>Prize:</strong> {selectedEvent.prize || "N/A"}
                 </p>
+                <p>
+                  <strong>Link:</strong>{" "}
+                  <a href={selectedEvent.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">
+                    {selectedEvent.link}
+                  </a>
+                </p>
               </div>
             )}
 

@@ -6,6 +6,17 @@ import img5 from "../assets/images/ML Mania.png";
 import img6 from "../assets/images/ospc.png";
 import img7 from "../assets/images/family feud.png";
 import img8 from "../assets/images/amazon.png";
+import img9 from "../assets/images/ctrlesc.jpg";
+import img10 from "../assets/images/img10.jpg";
+import img11 from "../assets/images/img11.jpg";
+import img12 from "../assets/images/img12.jpg";
+import img13 from "../assets/images/img13.jpg";
+import img14 from "../assets/images/img14.jpg";
+import img15 from "../assets/images/img15.jpg";
+import img16 from "../assets/images/img16.jpg";
+import img17 from "../assets/images/img17.jpg";
+import img18 from "../assets/images/img18.jpg";
+import img20 from "../assets/images/img20.jpg";
 // Contacts for the EventPage
 
 export const EventContacts = [
@@ -73,7 +84,7 @@ export const events = [
         title: "BYTE BEGIN",
         description:
           "Designed especially for first-year students, this event is the ultimate kickstart to their coding journey! Dive into the fundamentals of logical reasoning, arithmetic, and programming through interactive challenges that are both fun and beginner-friendly. Get ready to think, solve, and code your way to success!",
-        image: img5,
+        image: img6,
         path: "/events/byte-begin",
         team: "1-2 members",
         Date: "21st February 2025",
@@ -115,7 +126,7 @@ export const events = [
         title: "BRAINWAVE.ML",
         description:
           "Dive into the world of machine learning in this thrilling event! Test your knowledge, solve challenges, and showcase your skills by developing innovative solutions to given problems. Compete with the best and prove your expertise in ML!",
-        image: img6, // Replace with your image path
+        image: img5, // Replace with your image path
         path: "/events/brainwave.ml",
         team: "1-2 members",
         Date: "21st February 2025",
@@ -156,7 +167,7 @@ export const events = [
         title: "CTRL+ESCAPE",
         description:
           "Ctrl+Escape is a dynamic fusion of a tech quiz and coding challenges, designed to test both your knowledge and programming skills! Solve intriguing quiz questions to unlock coding tasks, where logic and speed are key. Get ready for an electrifying battle of wit and code!",
-        image: img6, // Replace with your image path
+        image: img9, // Replace with your image path
         path: "/events/ctrl+escape",
         team: "2-3 members",
         Date: "21st February 2025",
@@ -236,7 +247,7 @@ export const events = [
         title: "READY.SET.HIRE!",
         description:
           "Ready. Set. Hire! is your ultimate gateway to the real-world hiring experience! Dive into a competitive coding round, followed by a mock interview that mirrors actual recruitment challenges. Test your technical skills, sharpen your problem-solving abilities, and gain invaluable hands-on experience to ace future job interviews!",
-        image: img6, // Replace with your image path
+        image: img10, // Replace with your image path
         path: "/events/ready-set-hire",
         team: "Individual",
         Date: "21st February 2025",
@@ -276,7 +287,7 @@ export const events = [
         title: "GLITCH SNITCH",
         description:
           "Glitch Snitch is an exciting challenge that puts your debugging skills to the test! Hunt down and fix bugs in pre-written code, tackling real-world coding issues under time pressure. Sharpen your problem-solving abilities and level up your coding expertise in this fast-paced, brain-teasing event!",
-        image: img6, // Replace with your image path
+        image: img11, // Replace with your image path
         path: "/events/glitch-snitch",
         team: "1-2 members",
         Date: "21st February 2025",
@@ -360,7 +371,7 @@ export const events = [
         team: "1-3 members",
         description:
           "IPL Auction gives you the ultimate chance to build your dream team! Strategize, bid smartly, and assemble a winning squad that can dominate the tournament. Choose wisely—every pick counts in this high-stakes game of skill and strategy!",
-        image: img7, // Replace with your image path
+        image: img12, // Replace with your image path
         path: "/events/ipl-auction",
         rules: `• Participants answer survey-based questions on topics like Books, Food, Movies, Lifestyle, and Technology. Responses are ranked (1 = most popular, 7 = least popular).
               • Teams compete to guess the most popular answers.
@@ -392,7 +403,7 @@ export const events = [
         team: "1-2 members",
         description:
           "Put your prompt engineering skills to the test in this exciting AI challenge! With only a few chances, craft the perfect prompts to steer ChatGPT toward a specific target word. Unleash your creativity, refine your logic, and master the art of AI communication in this fun and brain-teasing competition.",
-        image: img7, // Replace with your image path
+        image: img13, // Replace with your image path
         path: "/events/chatgpt-pulse",
         rules: `• Participants answer survey-based questions on topics like Books, Food, Movies, Lifestyle, and Technology. Responses are ranked (1 = most popular, 7 = least popular).
               • Teams compete to guess the most popular answers.
@@ -418,13 +429,13 @@ export const events = [
       },
       {
         id: 12,
-        title: "Checkmate Chronicles (Collab with Castle Red)",
+        title: "Checkmate Chronicles",
         time: "01:30 PM to 04:00 PM",
         Date: "20 February 2025",
         team: "Individual",
         description:
           "Checkmate Chronicles is the ultimate test of strategy, logic, and precision! Outsmart your opponents in intense chess battles where every move shapes your path to victory. Sharpen your tactics, anticipate your rival’s next move, and compete for the title of Chess Champion!",
-        image: img7, // Replace with your image path
+        image: img14, // Replace with your image path
         path: "/events/chatgpt-pulse",
         rules: `• Participants answer survey-based questions on topics like Books, Food, Movies, Lifestyle, and Technology. Responses are ranked (1 = most popular, 7 = least popular).
               • Teams compete to guess the most popular answers.
@@ -461,7 +472,7 @@ export const events = [
         title: "OLPC",
         description:
           "OLPC is the ultimate arena for online programming contests, where sharp minds battle against the clock to solve intricate challenges packed with complex data structures and algorithms. Speed, precision, and problem-solving skills will determine who emerges victorious in this high-stakes digital showdown!",
-        image: img1, // Replace with your image path
+        image: img20, // Replace with your image path
         Date: "20 February 2025",
         team: "Individual",
         prize: "Rs 4k",
@@ -486,7 +497,7 @@ export const events = [
         title: "LIGHTS, CAMERA, REEL!",
         description:
           "Unleash your creativity and showcase your talent in this ultimate reels competition! Whether it’s dance, drama, comedy, or art—hit record, shine bright, and make your moment go viral! ",
-        image: img1, // Replace with your image path
+        image: img15, // Replace with your image path
         Date: "20 February 2025",
         team: "Individual",
         prize: "Rs 1.5k",
@@ -510,7 +521,7 @@ export const events = [
         title: "WAR OF THE RACKETS ",
         description:
           "War of the Rackets is an electrifying badminton showdown exclusively for girls! Battle it out in intense, fast-paced matches where agility, precision, and strategy take center stage. Smash your way to victory and claim your spot at the top in this ultimate test of skill and endurance!",
-        image: img1, // Replace with your image path
+        image: img16, // Replace with your image path
         Date: "20 February 2025",
         team: "Individual (Inter dept)",
         prize: "Rs 1.5k",
@@ -534,10 +545,11 @@ export const events = [
         title: "Grand Cricket League (GCL)",
         description:
           "Grand Cricket League is the ultimate battle of skill, strategy, and endurance! Compete in high-energy matches where every run matters, every wicket counts, and teamwork paves the path to victory. Step onto the pitch, showcase your batting, bowling, and fielding prowess, and chase the glory of becoming the champions!",
-        image: img1, // Replace with your image path
+        image: img17, // Replace with your image path
         Date: "20 February 2025",
         team: "11 members (Intra Dept)",
         prize: "Rs 2k",
+        link: "https://forms.gle/H5GXgcX9vWW4ero9A",
         path: "/events/gcl",
         to: "gcl",
         contact: [
@@ -558,7 +570,7 @@ export const events = [
         title: "CSEA SUPER LEAGUE (CSL) - Kick, Pass, Goal!",
         description:
           "Lace up your boots and get ready for an electrifying intra-departmental football showdown! Form your dream team, showcase your dribbling, passing, and scoring skills, and battle your way to glory in this fast-paced tournament of teamwork, strategy, and passion for the game!",
-        image: img1, // Replace with your image path
+        image: img18, // Replace with your image path
         Date: "20 February 2025",
         team: "5 members (Intra Dept)",
         prize: "Rs 2k",
@@ -578,6 +590,6 @@ export const events = [
         ],
       },
     ],
-    path: "/events/e-events", // Path to the event page
+    path: "/events/technical-events", // Path to the event page
   },
 ];
