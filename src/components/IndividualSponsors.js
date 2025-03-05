@@ -25,7 +25,7 @@ const sponsors = [
     logo: img3,
     description:
       "Tamilnad Mercantile Bank Limited (TMB) is an Indian bank headquartered at Thoothukudi, Tamil Nadu. The bank currently has 509 full branches throughout India, 12 regional offices and two link offices, two central processing centres, one service branch, four currency chests, 48 eLobby centres, 262 cash recycler machines (cash deposit machines) and 1151 automated teller machines (ATM).",
-    website: "https://companyC.com",
+    website: "https://tmb.in/",
   },
   {
     name: "Interview buddy - Coupon Partner",

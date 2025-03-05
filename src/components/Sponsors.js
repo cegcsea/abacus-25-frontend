@@ -3,13 +3,14 @@ import spon1 from "../assets/Sponsors/spon11.jpg";
 import spon3 from "../assets/Sponsors/tmb.png";
 import e2w from "../assets/Reach/e2w.png";
 import IndividualSponsors from "./IndividualSponsors";
+import img7 from "../assets/Sponsors/int_buddy.png";
 import { Link } from "react-router-dom";
 //import "../styles/Navbar.css";
 
 const Sponsors = () => {
   const sponsors = [
     { image: spon1, name: "Motorq", desc: "Title Sponsor" },
-    { image: e2w, name: "E2W STUDY", desc: "Educational Sponsor" },
+    { image: img7, name: "Interview buddy", desc: "Coupon Sponsor" },
     { image: spon3, name: "TMB", desc: "REACH'25 Sponsor" },
   ];
 
