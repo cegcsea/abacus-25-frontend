@@ -4,7 +4,6 @@ import { LoaderData } from "../context/loaderContext";
 import { UserData } from "../context/userContext";
 import Loader from "../components/Loader/Loader";
 import toast from "react-hot-toast";
-import price from "../assets/images/price.png";
 import { events } from "../constants/events";
 function EventPayment() {
   const { isLoading } = LoaderData();
@@ -18,24 +17,12 @@ function EventPayment() {
   });
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState("Get your payment screenshot...");
-  const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const allEvents = events.flatMap((category) => category.event);
   const selectedEvent = allEvents.find((event) => {
-    console.log(`Checking event:`, event.to, "Expected:", id, event.to === id);
+    //console.log(`Checking event:`, event.to, "Expected:", id, event.to === id);
     return event.to === id;
   });
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => setIsMobile(event.matches);
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    return () =>
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-  }, []);
-
   if (isLoading) return <Loader />;
 
   const handleFileChange = (event) => {
@@ -75,11 +62,7 @@ function EventPayment() {
 
   return (
     <div className="flex flex-col items-center justify-center bg-black text-white p-5 relative min-h-screen mt-16 pt-6">
-      {!isMobile && (
-        <div className="w-[30%] flex justify-center items-center">
-          <img src={price} alt="price-bg" />
-        </div>
-      )}
+      
 
       <div className="w-full max-w-md bg-gray-900 border-2 border-[#8a1818] rounded-lg shadow-lg p-6 md:p-8">
         <h2 className="text-2xl md:text-3xl font-bold text-center border-b-2 border-[#8a1818] pb-2">
@@ -106,7 +89,7 @@ function EventPayment() {
         {isOpen && (
           <div className="flex justify-center mt-2">
             <img
-              src={price}
+              src={selectedEvent?.Qr}
               alt="payment-qr"
               className="w-64 h-88 border-2 border-[#8a1818] rounded-md"
             />
@@ -164,11 +147,7 @@ function EventPayment() {
         </form>
       </div>
 
-      {!isMobile && (
-        <div className="w-[30%] flex justify-center items-center rotate-180">
-          <img src={price} alt="price-bg" />
-        </div>
-      )}
+      
     </div>
   );
 }

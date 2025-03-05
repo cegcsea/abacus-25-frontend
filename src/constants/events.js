@@ -17,7 +17,7 @@ import img16 from "../assets/images/img16.jpg";
 import img17 from "../assets/images/img17.jpg";
 import img18 from "../assets/images/img18.jpg";
 import img20 from "../assets/images/img20.jpg";
-
+import chess_30 from "../assets/images/chess_qr.jpeg";
 export const EventContacts = [
   {
     id: 1,
@@ -483,7 +483,7 @@ export const events = [
         time: "01:30 PM to 04:00 PM",
         Date: "23rd March 2025",
         team: "Individual",
-        Qr: img8,
+        Qr: chess_30,
         entry_fee: "Rs.30",
         description:
           "Checkmate Chronicles is the ultimate test of strategy, logic, and precision! Outsmart your opponents in intense chess battles where every move shapes your path to victory. Sharpen your tactics, anticipate your rival’s next move, and compete for the title of Chess Champion!",

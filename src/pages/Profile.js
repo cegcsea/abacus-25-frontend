@@ -8,6 +8,7 @@ import { TbHanger } from "react-icons/tb";
 import { LoaderData } from "../context/loaderContext";
 import Loader from "../components/Loader/Loader";
 import { sessions, workshopsReach } from "../constants/workshops";
+import { events } from "../constants/events";
 const Profile = () => {
   const { profile, user, userEvents, session } = UserData(); // Get the profile method and user data from context
 
@@ -15,7 +16,7 @@ const Profile = () => {
   //   profile(); // Fetch the profile when the component mounts
   //   console.log("profile:", userData.events,userData.workshops); // Debugging: Check the user data fetched
   // }, [user]);
-  //console.log(user.WorkshopPayment);
+  console.log(user.eventPayments);
   const navigate = useNavigate();
 
   const navigateTo = (page) => {
@@ -30,7 +31,6 @@ const Profile = () => {
     navigate(routes[page]);
   };
 
-  // Fallback data if the user is undefined
   const fallbackUser = {
     id: "",
     name: "",
@@ -44,6 +44,7 @@ const Profile = () => {
     registeredEvents: [],
     registeredWorkshops: [],
   };
+  const allEvents = events.flatMap((category) => category.event);
 
   const userData = user || fallbackUser;
   const { isLoading } = LoaderData();
@@ -72,14 +73,37 @@ const Profile = () => {
         </div>
 
         <div className="user-content flex flex-col lg:flex-row">
-          {/* Registered Events Section */}
           <div className="user-section events">
             <h3>Registered Events</h3>
-            {user.events?.length > 0 ? (
+            {(user.events?.length> 0 || user.eventPayments?.length>0)  ? (
               <ul>
                 {userEvents.map((event, index) => (
                   <li key={index}>{event.eventName}</li>
                 ))}
+                {user.eventPayments.map((event, index) => {
+                  const matchingEvent = allEvents.find(
+                    (ws) =>
+                      ws.id === event.eventId &&
+                    event.status === "SUCCESS"
+                  );
+                  return matchingEvent ? (
+                    <li key={index} className="!text-green-600">
+                      {matchingEvent.title}
+                    </li>
+                  ) : null;
+                })}
+                {user.eventPayments.map((event, index) => {
+                  const matchingEvent = allEvents.find(
+                    (ws) =>
+                      ws.id === event.eventId &&
+                    event.status === "PENDING"
+                  );
+                  return matchingEvent ? (
+                    <li key={index} className="!text-orange-800">
+                      {matchingEvent.title} - Pending
+                    </li>
+                  ) : null;
+                })}
               </ul>
             ) : (
               <p>
@@ -93,7 +117,6 @@ const Profile = () => {
             )}
           </div>
 
-          {/* Registered Workshops Section */}
           <div className="user-section workshops">
             <h3>Registered Workshops</h3>
 
@@ -147,7 +170,6 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Additional Profile Details */}
         <div className="flex items-center flex-col my-2 ">
           <p className="flex flex-row !text-white">
             <div className="pr-4 pt-5 lg:pt-1">
@@ -158,18 +180,17 @@ const Profile = () => {
               {userData.year} in the {userData.dept} department!
             </div>
           </p>
-          <p className="flex flex-row !text-white">
+          {/* <p className="flex flex-row !text-white">
             <div className="pr-4 pt-5 lg:pt-1 ">
               <TbHanger className="icon" />
             </div>
-            {/* <div>
+            <div>
               You are currently in JJCET , attending our
               marvellous REACH'25!
-            </div> */}
-          </p>
+            </div>
+          </p> */}
         </div>
 
-        {/* Action Buttons */}
         <div className="user-actions">
           {[
             {
@@ -198,7 +219,6 @@ const Profile = () => {
           ))}
         </div>
 
-        {/* Profile Image and Details */}
       </div>
     </div>
   );
