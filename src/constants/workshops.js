@@ -1,6 +1,7 @@
 import placement from "../assets/Reach/placement.svg";
 import UI from "../assets/images/ai.webp";
 import UI_400 from "../assets/images/workshop_qr.jpeg";
+import UI_1600 from "../assets/images/UI_1600.jpg";
 
 export const WorkshopContacts = [
   {
@@ -16,7 +17,7 @@ export const workshopsReach = [
     title: "Emergence of AI Engineers and Evolution of Vibe coding",
     to: "AI",
     image: UI,
-    bulkBooking:UI_400,
+    bulkBooking:UI_1600,
     qr: UI_400,
     venue: [
       {
