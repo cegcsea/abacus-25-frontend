@@ -16,7 +16,7 @@ export const workshopsReach = [
     title: "Emergence of AI Engineers and Evolution of Vibe coding",
     to: "AI",
     image: UI,
-
+    bulkBooking:UI_400,
     qr: UI_400,
     venue: [
       {
