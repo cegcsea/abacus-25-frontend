@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { UserData } from "../context/userContext";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { LoaderData } from "../context/loaderContext";
 import Loader from "../components/Loader/Loader";
 const ChangePassword = () => {
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword1, setShowPassword1] = useState(false);
+  const [showPassword2, setShowPassword2] = useState(false);
+  const [showPassword3, setShowPassword3] = useState(false);
   const { changePassword } = UserData();
   const [formData, setFormData] = useState({
     newPassword: "",
@@ -15,12 +17,12 @@ const ChangePassword = () => {
   const [passwordError, setPasswordError] = useState([]);
   const navigate = useNavigate();
 
-  // Toggles password visibility
-  const togglePasswordVisibility = () => {
-    setShowPassword((prevState) => !prevState);
+  const togglePasswordVisibility = (btn) => {
+    if (btn === 1) setShowPassword1((prevState) => !prevState);
+    if (btn === 2) setShowPassword2((prevState) => !prevState);
+    if (btn === 3) setShowPassword3((prevState) => !prevState);
   };
 
-  // Password validation function
   const validatePassword = (password) => {
     const errors = [];
     if (password.length < 8) errors.push("Must be at least 8 characters long.");
@@ -36,20 +38,15 @@ const ChangePassword = () => {
     return errors.length === 0;
   };
 
-  // Handles input changes for both fields
   const handleChange = (name, value) => {
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-
-    // Validate new password as the user types
     if (name === "password") {
       validatePassword(value);
     }
   };
 
-  // Submits the form data to the reset function
   const handleSubmit = (e) => {
     e.preventDefault();
-    //console.log("changepassword");
     if (
       validatePassword(formData.password) &&
       formData.newPassword === formData.confirmPassword &&
@@ -58,10 +55,8 @@ const ChangePassword = () => {
       changePassword(formData.password, formData.newPassword, navigate);
     } else if (formData.password === formData.newPassword) {
       toast.error("The current password and new password should be different");
-    }
-    else if(formData.newPassword !== formData.confirmPassword)
-    {
-        toast.error("The new password and confirm password fields should match");
+    } else if (formData.newPassword !== formData.confirmPassword) {
+      toast.error("The new password and confirm password fields should match");
     }
   };
   const { isLoading } = LoaderData();
@@ -75,10 +70,9 @@ const ChangePassword = () => {
       <div className="login-box">
         <h2 className="login-title">Reset Password</h2>
         <form className="login-form" onSubmit={handleSubmit}>
-          {/* New Password Field */}
           <div className="password-field">
             <input
-              type={showPassword ? "text" : "password"}
+              type={showPassword1 ? "text" : "password"}
               name="password"
               placeholder="Enter your current Password"
               className="login-input"
@@ -87,35 +81,44 @@ const ChangePassword = () => {
             />
             <span
               className={`fa fa-fw ${
-                showPassword ? "fa-eye" : "fa-eye-slash"
+                showPassword1 ? "fa-eye" : "fa-eye-slash"
               } field-icon toggle-password`}
-              onClick={togglePasswordVisibility}
+              onClick={()=>togglePasswordVisibility(1)}
             ></span>
           </div>
-          {/* new Password Field */}
           <div className="password-field">
             <input
-              type={showPassword ? "text" : "password"}
+              type={showPassword2 ? "text" : "password"}
               name="newPassword"
               placeholder="Enter your new Password"
               className="login-input"
               value={formData.newPassword}
               onChange={(e) => handleChange("newPassword", e.target.value)}
             />
+            <span
+              className={`fa fa-fw ${
+                showPassword2 ? "fa-eye" : "fa-eye-slash"
+              } field-icon toggle-password`}
+              onClick={()=>togglePasswordVisibility(2)}
+            ></span>
           </div>
-          {/* confirm Password Field */}
           <div className="password-field">
             <input
-              type={showPassword ? "text" : "password"}
+              type={showPassword3 ? "text" : "password"}
               name="confirmPassword"
               placeholder="Re-enter new Password"
               className="login-input"
               value={formData.confirmPassword}
               onChange={(e) => handleChange("confirmPassword", e.target.value)}
             />
+            <span
+              className={`fa fa-fw ${
+                showPassword3 ? "fa-eye" : "fa-eye-slash"
+              } field-icon toggle-password`}
+              onClick={()=>togglePasswordVisibility(3)}
+            ></span>
           </div>
 
-          {/* Password Validation Messages */}
           <div className="password-error">
             {passwordError.map((error, index) => (
               <p key={index} className="error-message">
@@ -124,7 +127,6 @@ const ChangePassword = () => {
             ))}
           </div>
 
-          {/* change Password Button */}
           <button type="submit" className="login-button">
             change Password
           </button>

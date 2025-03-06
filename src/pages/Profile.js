@@ -7,7 +7,7 @@ import { TbHanger } from "react-icons/tb";
 //import devrloper from "../assets/Hero/profile.png";
 import { LoaderData } from "../context/loaderContext";
 import Loader from "../components/Loader/Loader";
-import { sessions, workshopsReach } from "../constants/workshops";
+import {  workshopsReach } from "../constants/workshops";
 import { events } from "../constants/events";
 const Profile = () => {
   const { profile, user, userEvents, session } = UserData(); // Get the profile method and user data from context
@@ -146,16 +146,7 @@ const Profile = () => {
                     </li>
                   ) : null;
                 })}
-                {session.length > 0 &&
-                  user.workshops.map((workshop, index) => {
-                    //console.log(workshop);
-                    const matchingWorkshop = sessions.find(
-                      (ws) => ws.code === workshop.workshopId
-                    );
-                    return matchingWorkshop ? (
-                      <li key={index}>{matchingWorkshop.title}</li>
-                    ) : null;
-                  })}
+                
               </ul>
             ) : (
               <p>

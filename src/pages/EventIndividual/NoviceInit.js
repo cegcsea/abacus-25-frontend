@@ -58,7 +58,7 @@ const NoviceInit = () => {
   };
   useEffect(() => {
     let x = getbestPayment();
-    console.log("x=", x);
+    //console.log("x=", x);
     setBestPayment(x);
   }, [user?.eventPayments]);
   useEffect(() => {

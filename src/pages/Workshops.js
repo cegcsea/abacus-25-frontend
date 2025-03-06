@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { workshopsReach as workshops } from "../constants/workshops";
-import Session from "../components/Session";
 import { WorkshopContacts } from "../constants/workshops";
 import { LoaderData } from "../context/loaderContext";
 import Loader from "../components/Loader/Loader";
@@ -61,7 +60,6 @@ const Workshops = () => {
             </div>
           ))}
         </div>
-        {/* <Session /> */}
         <Contact contacts={WorkshopContacts} />
       </div>
     </div>

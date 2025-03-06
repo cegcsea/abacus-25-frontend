@@ -173,7 +173,7 @@ export const UserContextProvider = ({ children }) => {
       );
       const data = response.data;
       toast.success(data.message);
-      navigate("/login");
+      navigate("/profile");
     } catch (error) {
       toast.error(error.response.data.message);
     } finally {
