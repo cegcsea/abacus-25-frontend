@@ -144,7 +144,7 @@ function Accommodation() {
     const formReqData = new FormData();
     formReqData.append("paymentScreenshot", file);
     const userArray = [parseInt(user.id)];
-    console.log(user.id, userArray);
+    //console.log(user.id, userArray);
     await handleAccomodationPayment(
       {
         day0: selectionDay.day0 || false,

@@ -16,7 +16,7 @@ const Profile = () => {
   //   profile(); // Fetch the profile when the component mounts
   //   console.log("profile:", userData.events,userData.workshops); // Debugging: Check the user data fetched
   // }, [user]);
-  console.log(user.eventPayments);
+  //console.log(user.eventPayments);
   const navigate = useNavigate();
 
   const navigateTo = (page) => {
