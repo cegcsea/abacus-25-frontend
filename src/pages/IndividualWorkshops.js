@@ -9,7 +9,7 @@ import { LoaderData } from "../context/loaderContext";
 import Loader from "../components/Loader/Loader";
 const IndividualWorkshops = () => {
   const { id } = useParams();
-  const { user, isAuth ,refreshauth} = UserData();
+  const { user, isAuth, refreshauth } = UserData();
   const workshop = workshops.find((ws) => ws.to === id);
   const [activeTab, setActiveTab] = useState("description");
   const [bestPayment, setBestPayment] = useState(null);
@@ -41,7 +41,7 @@ const IndividualWorkshops = () => {
 
     for (const payment of workshopPayments) {
       if (payment.status === "SUCCESS") {
-        return payment; 
+        return payment;
       } else if (
         payment.status === "PENDING" &&
         (bestPayment?.status === "FAILURE" || !bestPayment)
@@ -60,8 +60,8 @@ const IndividualWorkshops = () => {
   }, [user?.WorkshopPayment]);
 
   useEffect(() => {
-      refreshauth();
-    }, [user?.WorkshopPayment?.length]);
+    refreshauth();
+  }, [user?.WorkshopPayment?.length]);
 
   if (isLoading) {
     return <Loader />;
@@ -74,11 +74,32 @@ const IndividualWorkshops = () => {
       return (
         <div>
           <div>
-            {/* Workshop Content */}
             <p className="flex justify-start text-justify mx-2 text-md lg:text-lg">
               {workshop.content}
             </p>
           </div>
+          {workshop.contentexpand && (
+            <div className="rounds-content para">
+              {workshop.contentexpand.map((round, index) => (
+                <div className="round-card" key={index}>
+                  <h3>{round.heading}</h3>
+                  <p>
+                    <strong>Topic:</strong> {round.topic}
+                  </p>
+                  <p>
+                    <strong>Speaker:</strong> {round.speaker}
+                  </p>
+
+                  <p>
+                    <strong>Title:</strong> {round.title}
+                  </p>
+                  {/* <p>
+                      <strong>Venue:</strong> {round.venue}
+                    </p> */}
+                </div>
+              ))}
+            </div>
+          )}
 
           {/* Prerequisites Section */}
           {workshop.prerequisites && (
@@ -121,12 +142,12 @@ const IndividualWorkshops = () => {
                   {info.certificate}
                 </td>
               </tr>
-              <tr className="bg-[#2e2e2e]">
+             {info.conducted_by && (<tr className="bg-[#2e2e2e]"> 
                 <td className="border-b py-2 px-4 text-[#aaa]">Instructor</td>
                 <td className="border-b py-2 px-4 text-[#aaa]">
                   {info.conducted_by}
                 </td>
-              </tr>
+              </tr>)}
               <tr className="bg-[#1d1d1d]">
                 <td className="border-b py-2 px-4 text-[#aaa]">Time</td>
                 <td className="border-b py-2 px-4 text-[#aaa]">{info.time}</td>

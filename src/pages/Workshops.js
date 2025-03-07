@@ -24,7 +24,8 @@ const Workshops = () => {
           Workshops
         </h2>
 
-        <div className="flex justify-center items-center mb-10">
+        <div className="flex flex-col md:flex-row justify-center items-center mb-10 gap-10">
+
           {workshops.map((workshop) => (
             <div
               key={workshop.id}
