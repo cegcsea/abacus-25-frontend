@@ -39,13 +39,15 @@ const BulkPayment = () => {
     const formReqData = new FormData();
     formReqData.append("paymentScreenshot", file);
 
-    const uniqueUserIds = [...new Set(userIds.split(",").map((uid) => parseInt(uid)))];
+    const uniqueUserIds = [
+      ...new Set(userIds.split(",").map((uid) => parseInt(uid))),
+    ];
     //console.log(uniqueUserIds.length, userIds);
     if (uniqueUserIds.length !== 5) {
       toast.error("Please provide exactly five unique user IDs.");
       return;
     }
-   // console.log(uniqueUserIds);
+    // console.log(uniqueUserIds);
     handleVerifyWorkshopPayment(
       {
         workshopId: parseInt(id),
@@ -73,8 +75,9 @@ const BulkPayment = () => {
           <p className="font-bold text-xl text-white">Note!</p>
           <ul className="list-disc list-inside text-justify pl-1">
             <li>Bulk registration Rs.1200 for 5 members</li>
-            <li>All five participants should register in the website individually and
-              enter Reach IDs separated by commas
+            <li>
+              All five participants should register in the website individually
+              and enter Abacus IDs separated by commas
             </li>
           </ul>
         </div>
@@ -94,7 +97,6 @@ const BulkPayment = () => {
             />
           </div>
         )}
-        
 
         <form className="flex flex-col gap-4 mt-5" onSubmit={handleSubmit}>
           <input
