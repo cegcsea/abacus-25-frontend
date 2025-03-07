@@ -1,5 +1,6 @@
 import placement from "../assets/Reach/placement.svg";
 import UI from "../assets/images/ai.webp";
+import UI2 from "../assets/images/api&kub.webp";
 import UI_400 from "../assets/images/workshop_qr.jpeg";
 import UI_1600 from "../assets/images/UI_1600.jpg";
 
@@ -17,7 +18,7 @@ export const workshopsReach = [
     title: "Emergence of AI Engineers and Evolution of Vibe coding",
     to: "AI",
     image: UI,
-    bulkBooking:UI_1600,
+    bulkBooking: UI_1600,
     qr: UI_400,
     venue: [
       {
@@ -39,6 +40,51 @@ export const workshopsReach = [
       time: "9:00 AM to 04:00 PM",
       date: "20th March, 2025",
       venue: "Hall of 1960, Department of Chemistry, CEG",
+      entryFee: "Rs. 400/-",
+    },
+    contact: [
+      {
+        id: 1,
+        name: "Sandhya",
+        phone: "+91 9363319596",
+      },
+      { id: 2, name: "Padmasharan", phone: "+91 9585612262" },
+    ],
+  },
+  {
+    title: "API & Kubernetes: The Dynamic Duo of Modern Tech",
+    to: "api",
+    image: UI2,
+    bulkBooking: UI_1600,
+    qr: UI_400,
+    code: 2,
+    content:
+      "APIs and Kubernetes are at the heart of modern software development, powering seamless integrations and scalable cloud-native applications. This workshop brings together industry experts to explore the role of APIs and Kubernetes in building robust, efficient, and scalable systems.",
+    contentexpand: [
+      {
+        heading: "Topic-1",
+        topic: "APIs & You: The tech behind every click",
+        speaker: "Deepa Sankaranarayanan,Software Development Manager, IBM",
+        title:
+          "Understand how APIs drive the digital world, enabling smooth communication between applications,",
+      },
+      {
+        heading: "Topic-2",
+        topic: "API Avengers: Assembling Kubernetes Gateway APIs",
+        speaker: "Dhivakar Asokan,Software Development Manager, IBM",
+        title:
+          "Dive into the power of Kubernetes Gateway APIs and how they revolutionize API management and service orchestration in cloud environments.",
+      },
+    ],
+    prerequisites:
+      "Participants are required to bring laptops.No prior knowledge is needed.",
+    // speakers: "John Doe, Jane Smith",
+    moreInfo: {
+      certificate: "Physical Certificate",
+      takeaways: "Takeaways",
+      time: "9:00 AM to 04:00 PM",
+      date: "21st March, 2025",
+      venue: "Hall of 1960, Department of Chemi`stry, CEG",
       entryFee: "Rs. 400/-",
     },
     contact: [
