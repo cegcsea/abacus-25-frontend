@@ -74,7 +74,7 @@ const BulkPayment = () => {
         <div className="flex justify-center w-full  flex-col">
           <p className="font-bold text-xl text-white">Note!</p>
           <ul className="list-disc list-inside text-justify pl-1">
-            <li>Bulk registration Rs.1200 for 5 members</li>
+            <li>Bulk registration Rs.1600 for 5 members</li>
             <li>
               All five participants should register in the website individually
               and enter Abacus IDs separated by commas
@@ -119,7 +119,7 @@ const BulkPayment = () => {
           />
           <input
             type="text"
-            placeholder="Enter Reach-ids.Eg:10,12,15,13,22"
+            placeholder="Enter Abacus-ids.Eg:10,12,15,13,22"
             value={userIds}
             onChange={handleUserIdsChange}
             className="w-full py-3 px-2 bg-black border border-[#8a1818] text-white rounded-md"
