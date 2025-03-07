@@ -294,7 +294,7 @@ const NoviceInit = () => {
       </div>
 
       {selectedEvent.contact?.length > 0 && (
-        <Contact contacts={selectedEvent.contact} />
+        <Contact contacts={selectedEvent.contact} category={"events"}/>
       )}
     </div>
   );

@@ -25,7 +25,6 @@ const Workshops = () => {
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center mb-10 gap-10">
-
           {workshops.map((workshop) => (
             <div
               key={workshop.id}
@@ -61,7 +60,7 @@ const Workshops = () => {
             </div>
           ))}
         </div>
-        <Contact contacts={WorkshopContacts} />
+        <Contact contacts={WorkshopContacts} category={"workshop"} />
       </div>
     </div>
   );

@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/contact.css";
 
-const Contact = ({ contacts }) => {
+const Contact = ({ contacts,category }) => {
   return (
     <div className="contact_details">
       {/* Header Section */}
       <div className="head">
         <h3>Contacts</h3>
-        <p>For queries regarding events</p>
+        <p>For queries regarding{category==="events"? " events":" workshops"}</p>
       </div>
 
       {/* Dynamically Rendered Contacts */}
