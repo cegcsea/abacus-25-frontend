@@ -1,6 +1,7 @@
 import placement from "../assets/Reach/placement.svg";
 import UI from "../assets/images/ai.webp";
 import UI2 from "../assets/images/api&kub.webp";
+import UI3 from "../assets/images/linux.webp";
 import UI_400 from "../assets/images/workshop_qr.jpeg";
 import UI_1600 from "../assets/images/UI_1600.jpg";
 
@@ -85,6 +86,35 @@ export const workshopsReach = [
       time: "9:00 AM to 04:00 PM",
       date: "21st March, 2025",
       venue: "Hall of 1960, Department of Chemi`stry, CEG",
+      entryFee: "Rs. 400/-",
+    },
+    contact: [
+      {
+        id: 1,
+        name: "Sandhya",
+        phone: "+91 9363319596",
+      },
+      { id: 2, name: "Padmasharan", phone: "+91 9585612262" },
+    ],
+  },
+  {
+    title: "Dive into Linux Networking Mastery!",
+    to: "linux",
+    image: UI3,
+    bulkBooking: UI_1600,
+    qr: UI_400,
+    code: 3,
+    content:
+      "Linux networking is the backbone of modern infrastructure, enabling secure communication, efficient data transfer, and seamless connectivity across systems. This workshop delves into essential networking concepts, covering protocols like DNS, HTTP, and TCP/IP, while equipping participants with hands-on experience in configuring network interfaces, troubleshooting connectivity issues, and optimizing performance using industry-standard tools.",
+    prerequisites:
+      "Ensure you have a working Linux host or VM (Ubuntu recommended).",
+    // speakers: "John Doe, Jane Smith",
+    moreInfo: {
+      certificate: "Physical Certificate",
+      takeaways: "Takeaways",
+      time: "9:30 AM to 12:30 PM",
+      date: "15th March, 2025",
+      mode: "online",
       entryFee: "Rs. 400/-",
     },
     contact: [

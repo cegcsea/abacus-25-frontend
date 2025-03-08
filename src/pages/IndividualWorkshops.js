@@ -142,12 +142,14 @@ const IndividualWorkshops = () => {
                   {info.certificate}
                 </td>
               </tr>
-             {info.conducted_by && (<tr className="bg-[#2e2e2e]"> 
-                <td className="border-b py-2 px-4 text-[#aaa]">Instructor</td>
-                <td className="border-b py-2 px-4 text-[#aaa]">
-                  {info.conducted_by}
-                </td>
-              </tr>)}
+              {info.conducted_by && (
+                <tr className="bg-[#2e2e2e]">
+                  <td className="border-b py-2 px-4 text-[#aaa]">Instructor</td>
+                  <td className="border-b py-2 px-4 text-[#aaa]">
+                    {info.conducted_by}
+                  </td>
+                </tr>
+              )}
               <tr className="bg-[#1d1d1d]">
                 <td className="border-b py-2 px-4 text-[#aaa]">Time</td>
                 <td className="border-b py-2 px-4 text-[#aaa]">{info.time}</td>
@@ -156,10 +158,22 @@ const IndividualWorkshops = () => {
                 <td className="border-b py-2 px-4 text-[#aaa]">Date</td>
                 <td className="border-b py-2 px-4 text-[#aaa]">{info.date}</td>
               </tr>
-              <tr className="bg-[#1d1d1d]">
-                <td className="border-b py-2 px-4 text-[#aaa]">Venue</td>
-                <td className="border-b py-2 px-4 text-[#aaa]">{info.venue}</td>
-              </tr>
+              {info.venue && (
+                <tr className="bg-[#1d1d1d]">
+                  <td className="border-b py-2 px-4 text-[#aaa]">Venue</td>
+                  <td className="border-b py-2 px-4 text-[#aaa]">
+                    {info.venue}
+                  </td>
+                </tr>
+              )}
+              {info.mode && (
+                <tr className="bg-[#1d1d1d]">
+                  <td className="border-b py-2 px-4 text-[#aaa]">Mode</td>
+                  <td className="border-b py-2 px-4 text-[#aaa]">
+                    {info.mode}
+                  </td>
+                </tr>
+              )}
               <tr className="bg-[#2e2e2e]">
                 <td className="border-b py-2 px-4 text-[#aaa]">Entry Fee</td>
                 <td className="border-b py-2 px-4 text-[#aaa]">
