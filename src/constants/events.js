@@ -575,11 +575,13 @@ export const events = [
         description:
           "OLPC is the ultimate arena for online programming contests, where sharp minds battle against the clock to solve intricate challenges packed with complex data structures and algorithms. Speed, precision, and problem-solving skills will determine who emerges victorious in this high-stakes digital showdown!",
         image: img20, // Replace with your image path
-        Date: "22-23 March 2025",
+        Date: "20th March 2025",
         team: "Individual",
         prize: "Rs 4k",
         path: "/events/olpc",
         to: "olpc",
+        venue: "online",
+        time: "08.30pm to 10.30pm",
         contact: [
           {
             id: 1,
@@ -626,7 +628,9 @@ export const events = [
         description:
           "War of the Rackets is an electrifying badminton showdown exclusively for girls! Battle it out in intense, fast-paced matches where agility, precision, and strategy take center stage. Smash your way to victory and claim your spot at the top in this ultimate test of skill and endurance!",
         image: img16, // Replace with your image path
-        Date: "22-23 March 2025",
+        Date: "17th & 18th March 2025",
+        time: "4:00pm - 7:00pm",
+        venue: "Badminton  Ground",
         team: "Individual (Inter dept)",
         prize: "Rs 1.5k",
         path: "/events/war-of-the-rackets",
@@ -650,8 +654,9 @@ export const events = [
         description:
           "Grand Cricket League is the ultimate battle of skill, strategy, and endurance! Compete in high-energy matches where every run matters, every wicket counts, and teamwork paves the path to victory. Step onto the pitch, showcase your batting, bowling, and fielding prowess, and chase the glory of becoming the champions!",
         image: img17, // Replace with your image path
-        Date: "22-23 March 2025",
+        Date: "15th & 16th March 2025",
         team: "11 members (Intra Dept)",
+        venue: "Sports Ground,CEG",
         prize: "Rs 2k",
         formLink: "https://forms.gle/H5GXgcX9vWW4ero9A",
         path: "/events/gcl",
@@ -678,6 +683,7 @@ export const events = [
         Date: "22-23 March 2025",
         team: "5 members (Intra Dept)",
         prize: "Rs 2k",
+        venue: "Sports Ground,CEG",
         path: "/events/csl",
         to: "csl",
         formLink: "https://forms.gle/SUjUj2p9PZVmrMo67",

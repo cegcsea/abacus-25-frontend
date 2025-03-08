@@ -153,6 +153,13 @@ const NoviceInit = () => {
                 ) : (
                   ""
                 )}
+                  {selectedEvent.venue ? (
+                  <p>
+                    <strong>Venue:</strong> {selectedEvent.venue}
+                  </p>
+                ) : (
+                  ""
+                )}
                 {/* <p>
                   <strong>Prize:</strong> {selectedEvent.prize || "N/A"}
                 </p> */}
