@@ -628,7 +628,7 @@ export const events = [
         description:
           "War of the Rackets is an electrifying badminton showdown exclusively for girls! Battle it out in intense, fast-paced matches where agility, precision, and strategy take center stage. Smash your way to victory and claim your spot at the top in this ultimate test of skill and endurance!",
         image: img16, // Replace with your image path
-        Date: "17th & 18th March 2025",
+        Date: "17th March 2025",
         time: "4:00pm - 7:00pm",
         venue: "Badminton  Ground",
         team: "Individual (Inter dept)",
@@ -654,7 +654,7 @@ export const events = [
         description:
           "Grand Cricket League is the ultimate battle of skill, strategy, and endurance! Compete in high-energy matches where every run matters, every wicket counts, and teamwork paves the path to victory. Step onto the pitch, showcase your batting, bowling, and fielding prowess, and chase the glory of becoming the champions!",
         image: img17, // Replace with your image path
-        Date: "15th & 16th March 2025",
+        Date: "16th March 2025",
         team: "11 members (Intra Dept)",
         venue: "Sports Ground,CEG",
         prize: "Rs 2k",
@@ -680,7 +680,7 @@ export const events = [
         description:
           "Lace up your boots and get ready for an electrifying intra-departmental football showdown! Form your dream team, showcase your dribbling, passing, and scoring skills, and battle your way to glory in this fast-paced tournament of teamwork, strategy, and passion for the game!",
         image: img18, // Replace with your image path
-        Date: "22-23 March 2025",
+        Date: "15th March 2025",
         team: "5 members (Intra Dept)",
         prize: "Rs 2k",
         venue: "Sports Ground,CEG",
@@ -695,8 +695,8 @@ export const events = [
           },
           {
             id: 2,
-            name: "Ajai Krishna T.S",
-            phone: "70107 07652",
+            name: "Hamza",
+            phone: "7010543155",
           },
         ],
       },
