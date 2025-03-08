@@ -16,7 +16,7 @@ function RegisterDetails() {
     name: "",
     college: "",
     //hostCollege: "",
-    accomodation: false,
+    accomodation: "",
     dept: "",
     year: "",
     mobile: "",
@@ -69,7 +69,7 @@ function RegisterDetails() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //console.log("Form Data before submit:", formData);
+    console.log("Form Data before submit:", formData);
     if (formData.password !== formData.confirmPassword) {
       toast.error("Passwords do not match!");
       return;
@@ -181,13 +181,14 @@ function RegisterDetails() {
             </option>
           </select> */}
           <select
+            placeholder="Do you need Accodomation in CEG?"
             className="p-2 outline-none border border-[#c53939] text-[18px] bg-[#1d1d1d]"
             value={
               formData.accomodation === true
                 ? "true"
                 : formData.accomodation === false
-                  ? "false"
-                  : ""
+                ? "false"
+                : ""
             }
             onChange={(e) =>
               handleSelectChange(
@@ -195,14 +196,14 @@ function RegisterDetails() {
                 e.target.value === "true"
                   ? true
                   : e.target.value === "false"
-                    ? false
-                    : null
+                  ? false
+                  : null
               )
             }
             required
           >
             <option value="" disabled hidden>
-              Accommodation
+              Do you need Accodomation in CEG?
             </option>
             <option key="Yes" value="true">
               Yes
@@ -211,7 +212,6 @@ function RegisterDetails() {
               No
             </option>
           </select>
-
 
           <input
             type="text"
