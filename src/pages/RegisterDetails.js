@@ -150,7 +150,7 @@ function RegisterDetails() {
                 {option.label}
               </option
           </select> */}
-          <select
+          {/* <select
             className="p-2 outline-none border border-[#c53939] text-[18px] bg-[#1d1d1d]"
             value={
               formData.accomodation !== undefined &&
@@ -179,7 +179,39 @@ function RegisterDetails() {
             <option key="No" value="false">
               No
             </option>
+          </select> */}
+          <select
+            className="p-2 outline-none border border-[#c53939] text-[18px] bg-[#1d1d1d]"
+            value={
+              formData.accomodation === true
+                ? "true"
+                : formData.accomodation === false
+                  ? "false"
+                  : ""
+            }
+            onChange={(e) =>
+              handleSelectChange(
+                "accomodation",
+                e.target.value === "true"
+                  ? true
+                  : e.target.value === "false"
+                    ? false
+                    : null
+              )
+            }
+            required
+          >
+            <option value="" disabled hidden>
+              Accommodation
+            </option>
+            <option key="Yes" value="true">
+              Yes
+            </option>
+            <option key="No" value="false">
+              No
+            </option>
           </select>
+
 
           <input
             type="text"
