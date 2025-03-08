@@ -168,16 +168,15 @@ function RegisterDetails() {
                   : null
               )
             }
-            //disabled
             required
           >
-            {/* <option value="" disabled>
-              Accommodation required?
-            </option> */}
-            <option key="Yes" value={true}>
+            <option value="" disabled>
+              Accommodation
+            </option>
+            <option key="Yes" value="true">
               Yes
             </option>
-            <option key="No" value={false}>
+            <option key="No" value="false">
               No
             </option>
           </select>
@@ -220,11 +219,10 @@ function RegisterDetails() {
           <input
             type="text"
             name="referralCode"
-            placeholder="referralCode"
+            placeholder="referralCode (optional)"
             className="p-2 outline-none border border-[#c53939] text-[18px] bg-[#1d1d1d]"
             value={formData.referralCode}
             onChange={handleChange}
-            
           />
 
           <div className="flex items-center border border-[#c53939]">
