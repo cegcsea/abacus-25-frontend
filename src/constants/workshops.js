@@ -100,7 +100,7 @@ export const workshopsReach = [
     ],
   },
   {
-    title: "Dive into Linux Networking Mastery!",
+    title: "Linux Networking Essentials",
     to: "linux",
     image: UI3,
     qr: UI_150,
