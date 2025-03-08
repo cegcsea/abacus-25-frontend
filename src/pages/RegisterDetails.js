@@ -69,7 +69,7 @@ function RegisterDetails() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data before submit:", formData);
+    //console.log("Form Data before submit:", formData);
     if (formData.password !== formData.confirmPassword) {
       toast.error("Passwords do not match!");
       return;
