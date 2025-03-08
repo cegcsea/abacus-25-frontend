@@ -116,7 +116,7 @@ export const workshopsReach = [
       time: "9:30 AM to 12:30 PM",
       date: "15th March, 2025",
       mode: "online",
-      entryFee: "Rs. 400/-",
+      entryFee: "Rs. 150/-",
     },
     contact: [
       {
