@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { LoaderData } from "../context/loaderContext";
 import { UserData } from "../context/userContext";
 import toast from "react-hot-toast";
-import price from "../assets/images/price.png";
+import qr from "../assets/images/chess_qr.jpeg";
 import Loader from "../components/Loader/Loader";
 import { useNavigate } from "react-router-dom";
 function Accommodation() {
@@ -144,7 +144,7 @@ function Accommodation() {
     const formReqData = new FormData();
     formReqData.append("paymentScreenshot", file);
     const userArray = [parseInt(user.id)];
-    //console.log(user.id, userArray);
+    console.log(user.id, userArray,formData,price,food);
     await handleAccomodationPayment(
       {
         day0: selectionDay.day0 || false,
@@ -223,7 +223,7 @@ function Accommodation() {
 
           <div className="flex flex-col gap-2 text-gray-400">
             <p>Do you need food for your stay?</p>
-            <div className="flex gap-5">
+            <div className="flex gap-5 justify-center">
               <div className="flex gap-3">
                 <input
                   type="radio"
@@ -248,7 +248,9 @@ function Accommodation() {
               </div>
             </div>
           </div>
-
+          {selectionDates && selectionDay && <div>
+            <p className="bg-[#8a1818] p-2 text-white font-semibold py-2 rounded w-fulltext-lg font-bold">Current Total : {price}</p>
+          </div>}
           {hide && (
             <>
               <hr className="opacity-50 border-[#8a1818]" />
@@ -267,7 +269,7 @@ function Accommodation() {
               {isOpen && (
                 <div className="flex justify-center mt-2">
                   <img
-                    src={price}
+                    src={qr}
                     alt="payment-qr"
                     className="w-64 h-88 border-2 border-[#8a1818] rounded-md"
                   />
@@ -318,7 +320,7 @@ function Accommodation() {
               <div className="self-center">
                 <button
                   type="submit"
-                  className="bg-[#8a1818] text-white py-2 rounded w-full"
+                  className="bg-[#8a1818] text-white py-2 px-4 rounded w-full"
                 >
                   Book Accommodation {"<~>"}
                 </button>

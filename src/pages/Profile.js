@@ -9,6 +9,7 @@ import { LoaderData } from "../context/loaderContext";
 import Loader from "../components/Loader/Loader";
 import {  workshopsReach } from "../constants/workshops";
 import { events } from "../constants/events";
+import toast from "react-hot-toast";
 const Profile = () => {
   const { profile, user, userEvents, session } = UserData(); // Get the profile method and user data from context
 
@@ -25,8 +26,14 @@ const Profile = () => {
       workshops: "/workshops",
       update: "/profile/update",
       dashboard: "/dashboard",
+      Accomodation: user.accomodation?"/accomodation":"",
       "change-password": "/profile/change-password",
     };
+    if(page==="Accomodation" && routes[page]==="")
+    {
+      toast.error("Opt for accomodation to access this page!");
+      return;
+    }
 
     navigate(routes[page]);
   };
@@ -199,10 +206,15 @@ const Profile = () => {
               page: "change-password",
               className: "btn-password",
             },
+            {
+              label: "Accomodation",
+              page: "Accomodation",
+              className: "btn-password",
+            },
           ].map(({ label, page, onClick, className }) => (
             <button
               key={label}
-              className="p-2  mx-2 text-white border border-[#c53939] hover:bg-[#c5393936] duration-150"
+              className="p-2  my-1 mx-2 w-[70%] lg:w-[40%] text-white border border-[#c53939] hover:bg-[#c5393936] duration-150"
               onClick={onClick || (() => navigateTo(page))}
             >
               {label}

@@ -15,7 +15,7 @@ function UpdateProfile() {
     dept: user.dept,
     year: user.year,
     mobile: user.mobile,
-    //accomodation: user.accomodation,
+    accomodation: user.accomodation,
   });
 
   //console.log(user);
@@ -26,9 +26,9 @@ function UpdateProfile() {
       dept: user.dept,
       year: user.year,
       mobile: user.mobile,
-      //accomodation: user.accomodation,
+      accomodation: user.accomodation,
     });
-  },[user]);
+  }, [user]);
   // useEffect(() => {
   //   profile();
   //   //console.log("updateprofile:", user);
@@ -73,7 +73,7 @@ function UpdateProfile() {
         dept: formData.dept,
         year: isNaN(formData.year) ? formData.year : parseInt(formData.year),
         mobile: formData.mobile,
-        //accomodation: formData.accomodation,
+        accomodation: formData.accomodation,
       },
       navigate
     );
@@ -144,7 +144,7 @@ function UpdateProfile() {
             required
           />
 
-          {/* <select
+          <select
             className="p-2 outline-none border border-[#c53939] text-[18px] bg-[#1d1d1d]"
             value={
               formData.accomodation !== undefined &&
@@ -165,15 +165,15 @@ function UpdateProfile() {
             required
           >
             <option value="" disabled>
-              Accommodation status
+              Do you need Accomodation in CEG?
             </option>
             <option key="Yes" value={true}>
-              Yes
+              Accomodation required
             </option>
             <option key="No" value={false}>
-              No
+              Accomodation not required
             </option>
-          </select> */}
+          </select>
 
           <div className="self-center">
             <button
