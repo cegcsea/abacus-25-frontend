@@ -28,30 +28,30 @@ function Accommodation() {
     { label: "Single day", value: "1" },
     { label: "Two Days", value: "2" },
     { label: "Three Days", value: "3" },
-    { label: "Four Days", value: "4" },
+    //{ label: "Four Days", value: "4" },
   ];
 
   const singleDayOptions = [
-    { label: "March 20", value: "1", day0: true },
+    //{ label: "March 20", value: "1", day0: true },
     { label: "March 21", value: "1", day1: true },
     { label: "March 22", value: "1", day2: true },
     { label: "March 23", value: "1", day3: true },
   ];
 
   const doubleDayOptions = [
-    { label: "March 20 & 21", value: "2", day0: true, day1: true },
+    //{ label: "March 20 & 21", value: "2", day0: true, day1: true },
     { label: "March 21 & 22", value: "2", day1: true, day2: true },
     { label: "March 22 & 23", value: "2", day2: true, day3: true },
   ];
 
   const tripleDayOptions = [
-    {
-      label: "March 20, 21 & 22",
-      value: "3",
-      day0: true,
-      day1: true,
-      day2: true,
-    },
+    // {
+    //   label: "March 20, 21 & 22",
+    //   value: "3",
+    //   day0: true,
+    //   day1: true,
+    //   day2: true,
+    // },
     {
       label: "March 21, 22 & 23",
       value: "3",
@@ -63,7 +63,7 @@ function Accommodation() {
 
   const allDayOptions = [
     {
-      label: "March 20 to March 23",
+      label: "March 21 to March 23",
       value: "4",
       day0: true,
       day1: true,
@@ -144,7 +144,7 @@ function Accommodation() {
     const formReqData = new FormData();
     formReqData.append("paymentScreenshot", file);
     const userArray = [parseInt(user.id)];
-    console.log(user.id, userArray,formData,price,food);
+    console.log(user.id, userArray, formData, price, food);
     await handleAccomodationPayment(
       {
         day0: selectionDay.day0 || false,
@@ -248,9 +248,13 @@ function Accommodation() {
               </div>
             </div>
           </div>
-          {selectionDates && selectionDay && <div>
-            <p className="bg-[#8a1818] p-2 text-white font-semibold py-2 rounded w-fulltext-lg font-bold">Current Total : {price}</p>
-          </div>}
+          {selectionDates && selectionDay && (
+            <div>
+              <p className="bg-[#8a1818] p-2 text-white font-semibold py-2 rounded w-fulltext-lg font-bold">
+                Current Total : {price}
+              </p>
+            </div>
+          )}
           {hide && (
             <>
               <hr className="opacity-50 border-[#8a1818]" />
@@ -258,6 +262,13 @@ function Accommodation() {
                 <span className="text-[#8a1818]">{"<"}</span>
                 Payment
                 <span className="text-[#8a1818]">{">"}</span>
+              </div>
+              <div className="flex justify-center w-full  flex-col">
+                <p className="font-bold text-xl text-white">Note!</p>
+                <ul className="list-disc list-inside text-justify pl-1">
+                  <li>Attention!! Accomodation payment can be done only once.</li>
+                  <li>Kindly fill the details carefully!</li>
+                </ul>
               </div>
               <button
                 type="button"
