@@ -206,10 +206,10 @@ function RegisterDetails() {
               Do you need Accodomation in CEG?
             </option>
             <option key="Yes" value="true">
-              Yes
+              Accomodation required
             </option>
             <option key="No" value="false">
-              No
+              Accomodation not required
             </option>
           </select>
 
