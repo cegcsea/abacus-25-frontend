@@ -3,6 +3,7 @@ import UI from "../assets/images/ai.webp";
 import UI2 from "../assets/images/api&kub.webp";
 import UI3 from "../assets/images/linux.webp";
 import UI_400 from "../assets/images/workshop_qr.jpeg";
+import UI_150 from "../assets/images/150.jpeg";
 import UI_1600 from "../assets/images/UI_1600.jpg";
 
 export const WorkshopContacts = [
@@ -59,6 +60,7 @@ export const workshopsReach = [
     bulkBooking: UI_1600,
     qr: UI_400,
     code: 2,
+    note: "To register for a single topic, use the provided form link. To register for both topics together, complete the registration directly on the website.",
     content:
       "APIs and Kubernetes are at the heart of modern software development, powering seamless integrations and scalable cloud-native applications. This workshop brings together industry experts to explore the role of APIs and Kubernetes in building robust, efficient, and scalable systems.",
     contentexpand: [
@@ -101,8 +103,7 @@ export const workshopsReach = [
     title: "Dive into Linux Networking Mastery!",
     to: "linux",
     image: UI3,
-    bulkBooking: UI_1600,
-    qr: UI_400,
+    qr: UI_150,
     code: 3,
     content:
       "Linux networking is the backbone of modern infrastructure, enabling secure communication, efficient data transfer, and seamless connectivity across systems. This workshop delves into essential networking concepts, covering protocols like DNS, HTTP, and TCP/IP, while equipping participants with hands-on experience in configuring network interfaces, troubleshooting connectivity issues, and optimizing performance using industry-standard tools.",
@@ -110,7 +111,7 @@ export const workshopsReach = [
       "Ensure you have a working Linux host or VM (Ubuntu recommended).",
     // speakers: "John Doe, Jane Smith",
     moreInfo: {
-      certificate: "Physical Certificate",
+      certificate: "E-Certificate",
       takeaways: "Takeaways",
       time: "9:30 AM to 12:30 PM",
       date: "15th March, 2025",

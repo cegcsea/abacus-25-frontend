@@ -78,6 +78,7 @@ const IndividualWorkshops = () => {
               {workshop.content}
             </p>
           </div>
+
           {workshop.contentexpand && (
             <div className="rounds-content para">
               {workshop.contentexpand.map((round, index) => (
@@ -100,7 +101,31 @@ const IndividualWorkshops = () => {
               ))}
             </div>
           )}
-
+          {workshop.note && (
+            <div className="mt-4 mx-2">
+              <div className="flex mx-auto my-3 mb-8 text-md sm: text-xl lg:text-2xl font-semibold">
+                Note:{" "}
+                <div className="bg-[#c53939] h-[3px] w-[20%] mx-2 my-auto"></div>
+              </div>
+              <ul className="list-disc list-inside text-md lg:text-lg text-justify text-[#aaa]">
+                <li>
+                  To register for a single topic, use the provided form link:
+                  <a
+                    href="https://forms.gle/KyTKdp2JRfxmACjD9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-red-500 underline"
+                  >
+                    Click here to register
+                  </a>
+                </li>
+                <li>
+                  To register for both topics together, complete the
+                  registration directly on the website.
+                </li>
+              </ul>
+            </div>
+          )}
           {/* Prerequisites Section */}
           {workshop.prerequisites && (
             <div className="mt-4 mx-2">
