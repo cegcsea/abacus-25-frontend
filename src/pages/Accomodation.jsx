@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { LoaderData } from "../context/loaderContext";
 import { UserData } from "../context/userContext";
 import toast from "react-hot-toast";
-import qr from "../assets/images/chess_qr.jpeg";
+import qr from "../assets/images/accomodation.jpg";
 import Loader from "../components/Loader/Loader";
 import { useNavigate } from "react-router-dom";
 function Accommodation() {

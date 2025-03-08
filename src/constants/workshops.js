@@ -114,7 +114,7 @@ export const workshopsReach = [
       certificate: "E-Certificate",
       takeaways: "Takeaways",
       time: "9:30 AM to 12:30 PM",
-      date: "15th March, 2025",
+      date: "16th March, 2025",
       mode: "online",
       entryFee: "Rs. 150/-",
     },
