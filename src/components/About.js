@@ -28,7 +28,9 @@ const About = () => {
           <p className="abt-no-select">
             Every year, as a component of ABACUS, we organize outreach initiatives in renowned colleges across Tamil Nadu, aiming to enhance student engagement and amplify awareness for our symposium. Our specialized workshops under the REACH umbrella introduce students to emerging technologies, ensuring they remain at the forefront of innovation and industry relevance.
           </p>
-          <button className="abt-button">Explore REACH &lt;~&gt;</button>
+          <a href="https://reach.abacus.org.in/" target="_blank" rel="noopener noreferrer">
+            <button className="abt-buttons">Explore Reach &lt;~&gt;</button>
+          </a>
         </div>
       </section>
 
