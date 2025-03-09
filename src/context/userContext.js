@@ -588,7 +588,7 @@ export const UserContextProvider = ({ children }) => {
   }
   
   const handleAccomodationPayment = (data, navigate) => {
-    const ACCOMMODATION_EVENT_ID = 10;
+    const ACCOMMODATION_EVENT_ID = 20;
     toast.promise(
       addAccomodationDetails({
         day0: data.day0,
