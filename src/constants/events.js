@@ -5,6 +5,8 @@ import img4 from "../assets/images/pentacode.png";
 import img5 from "../assets/images/ML Mania.png";
 import img6 from "../assets/images/ospc.png";
 import img7 from "../assets/images/th.webp";
+import img21 from "../assets/images/codexcel.png"
+import img22 from "../assets/images/pixel.png"
 import img8 from "../assets/images/amazon.png";
 import img9 from "../assets/images/ctrlesc.jpg";
 import img10 from "../assets/images/img10.jpg";
@@ -331,6 +333,88 @@ export const events = [
             id: 2,
             name: "Dinesh S",
             phone: "93603 80769",
+          },
+        ],
+      },
+      {
+        id: 7,
+        title: "CodeXcelerate: CODE VELOCITY F1",
+        description: "CodExcelerate is a high-octane coding duel where speed meets strategy! In Round 1, individual participants race against the clock to solve 30 coding problems of escalating difficulty—faster submissions earn higher points, so time is of the essence. Round 2 flips the game into an exciting board-style team challenge. Teams roll dice to unlock hidden coding tasks on a dynamic map, navigating penalties for wrong answers and grabbing bonus points for swift completions. Only the most strategic and swift coders will race their way to victory in this logic-fueled adventure!",
+        image: img21, // Replace with your image path
+        path: "/events/codexcelerate",
+        team: "1-2 members",
+        Date: "23rd March 2025",
+        prize: "",
+        to: "codexcelerate",
+        rounds: [
+          {
+            title: "Round 1 -  Code Sprint Showdown",
+            content:
+              "Dive into a fast-paced solo challenge where participants must solve 30 coding problems of varying difficulty. The twist? Faster solutions earn higher points! Bring your A-game, because every second saved is a point gained. Precision and pace go hand-in-hand in this high-pressure race against the clock!",
+            duration: "30 minutes",
+            time: "09:00 AM to 12:30 PM",
+            // venue: "Main Building Room No 238",
+          },
+          {
+            title: "Round 2 - CodeQuest Board Battle",
+            content:
+              "The battlefield transforms into a coding board game! Teams take turns rolling a die to unlock mystery coding challenges placed across a strategic game map.Earn points by solving them—but beware! Wrong answers may cost you a move or more. Plan wisely, code swiftly, and claim victory with bonus points for reaching the finish first!",
+            duration: "1 hour 30 minutes",
+            time: "01:00 PM to 04:00 PM",
+            // venue: "Main Building Room No 238",
+          },
+        ],
+        contact: [
+          {
+            id: 1,
+            name: "Nivedha B",
+            phone: "76049 63610",
+          },
+          {
+            id: 2,
+            name: "Ajay Krishna",
+            phone: "70107 07652",
+          },
+        ],
+      },
+      {
+        id: 8,
+        title: "Prose to Pixel",
+        description: "Prose to Pixel is an electrifying event where innovation meets intellect. This event blends coding logic with creative design. Round 1 throws participants into a dynamic relay where roles alternate between solving tech puzzles and crafting imaginative content—while facing surprise sabotages. Round 2 shifts into a high-stakes design arena where teams build interactive Figma prototypes, tackling hurdles that test both their strategy and creativity. It’s the ultimate fusion of tech, teamwork, and design thinking!",
+        image: img22, // Replace with your image path
+        path: "/events/prose-to-pixel",
+        team: "2-3 members",
+        Date: "23rd March 2025",
+        prize: "",
+        to: "prose-to-pixel",
+        rounds: [
+          {
+            title: "Round 1 - Brainstorm Relay",
+            content:
+              "One member dives into coding and puzzle-solving, while others handle creative writing or design—based on a given theme. Random sabotages add a fun twist! Roles rotate periodically so everyone gets to showcase both technical and creative skills.",
+            duration: "1 hour",
+            time: "10:00 AM to 11:00 AM",
+            // venue: "Main Building Room No 238",
+          },
+          {
+            title: "Round 2 - Design Challenge",
+            content:
+              "Using Figma, teams convert their concepts into interactive prototypes. Starting with a base score, teams encounter surprise hurdles—accepting them can earn bonuses, but skipping causes penalties. Balance creativity, strategy, and problem-solving to win!",
+            duration: "1 hour 30 minutes",
+            time: "11:30 AM to 01:00 PM",
+            // venue: "Main Building Room No 238",
+          },
+        ],
+        contact: [
+          {
+            id: 1,
+            name: "Dinesh S",
+            phone: "9360380769",
+          },
+          {
+            id: 2,
+            name: "Akshaya",
+            phone: "9342583181",
           },
         ],
       },
