@@ -26,13 +26,7 @@ const ChangePassword = () => {
   const validatePassword = (password) => {
     const errors = [];
     if (password.length < 8) errors.push("Must be at least 8 characters long.");
-    if (!/[A-Z]/.test(password))
-      errors.push("Must include an uppercase letter.");
-    if (!/[a-z]/.test(password))
-      errors.push("Must include a lowercase letter.");
-    if (!/\d/.test(password)) errors.push("Must include a digit.");
-    if (!/[@$!%*?&#]/.test(password))
-      errors.push("Must include a special character (@, $, !, %, *, ?, &, #).");
+    if (!/\d/.test(password)) errors.push("Must include at least one digit.");
 
     setPasswordError(errors);
     return errors.length === 0;
@@ -40,7 +34,7 @@ const ChangePassword = () => {
 
   const handleChange = (name, value) => {
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-    if (name === "password") {
+    if (name === "newPassword") {
       validatePassword(value);
     }
   };
@@ -83,7 +77,7 @@ const ChangePassword = () => {
               className={`fa fa-fw ${
                 showPassword1 ? "fa-eye" : "fa-eye-slash"
               } field-icon toggle-password`}
-              onClick={()=>togglePasswordVisibility(1)}
+              onClick={() => togglePasswordVisibility(1)}
             ></span>
           </div>
           <div className="password-field">
@@ -99,7 +93,7 @@ const ChangePassword = () => {
               className={`fa fa-fw ${
                 showPassword2 ? "fa-eye" : "fa-eye-slash"
               } field-icon toggle-password`}
-              onClick={()=>togglePasswordVisibility(2)}
+              onClick={() => togglePasswordVisibility(2)}
             ></span>
           </div>
           <div className="password-field">
@@ -115,7 +109,7 @@ const ChangePassword = () => {
               className={`fa fa-fw ${
                 showPassword3 ? "fa-eye" : "fa-eye-slash"
               } field-icon toggle-password`}
-              onClick={()=>togglePasswordVisibility(3)}
+              onClick={() => togglePasswordVisibility(3)}
             ></span>
           </div>
 

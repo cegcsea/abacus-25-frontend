@@ -12,6 +12,7 @@ function RegisterDetails() {
   const [btnLoading, setBtnLoading] = useState(false);
   const [isPassword, setIsPassword] = useState("password");
   const [isConfirmPassword, setIsConfirmPassword] = useState("password");
+  const [passwordError, setPasswordError] = useState([]);
   const [formData, setFormData] = useState({
     name: "",
     college: "",
@@ -62,9 +63,20 @@ function RegisterDetails() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const validatePassword = (password) => {
+    const errors = [];
+    if (password.length < 8) errors.push("Must be at least 8 characters long.");
+    if (!/\d/.test(password)) errors.push("Must include at least one digit.");
+
+    setPasswordError(errors);
+    return errors.length === 0;
+  };
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+    if (name === "password") {
+      validatePassword(value);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -299,6 +311,13 @@ function RegisterDetails() {
             >
               {isConfirmPassword === "password" ? <FaEye /> : <FaEyeSlash />}
             </span>
+          </div>
+          <div className="password-error">
+            {passwordError.map((error, index) => (
+              <p key={index} className="error-message">
+                {error}
+              </p>
+            ))}
           </div>
 
           <div className="self-center">
