@@ -339,7 +339,7 @@ export const events = [
       {
         id: 7,
         title: "CodeXcelerate: CODE VELOCITY F1",
-        description: "CodExcelerate is a high-octane coding duel where speed meets strategy! In Round 1, individual participants race against the clock to solve 30 coding problems of escalating difficulty—faster submissions earn higher points, so time is of the essence. Round 2 flips the game into an exciting board-style team challenge. Teams roll dice to unlock hidden coding tasks on a dynamic map, navigating penalties for wrong answers and grabbing bonus points for swift completions. Only the most strategic and swift coders will race their way to victory in this logic-fueled adventure!",
+        description: "An adrenaline-charged coding showdown where speed meets strategy. Participants face a gauntlet of challenges that test their logical thinking, accuracy, and resilience under pressure. It’s not just about writing code—it’s about racing against the clock, making smart decisions, and keeping your cool in a high-stakes environment.",
         image: img21, // Replace with your image path
         path: "/events/codexcelerate",
         team: "1-2 members",
@@ -380,7 +380,7 @@ export const events = [
       {
         id: 8,
         title: "Prose to Pixel",
-        description: "Prose to Pixel is an electrifying event where innovation meets intellect. This event blends coding logic with creative design. Round 1 throws participants into a dynamic relay where roles alternate between solving tech puzzles and crafting imaginative content—while facing surprise sabotages. Round 2 shifts into a high-stakes design arena where teams build interactive Figma prototypes, tackling hurdles that test both their strategy and creativity. It’s the ultimate fusion of tech, teamwork, and design thinking!",
+        description: "A dynamic fusion of logic and creativity, this event challenges participants to blend problem-solving with design thinking. With unexpected twists and imaginative tasks, it pushes boundaries and brings out the best of both technical and artistic minds. Precision, innovation, and a dash of chaos make this a truly electrifying experience.",
         image: img22, // Replace with your image path
         path: "/events/prose-to-pixel",
         team: "2-3 members",
