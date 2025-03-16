@@ -564,7 +564,7 @@ export const events = [
       {
         id: 12,
         title: "Checkmate Chronicles",
-        time: "01:30 PM to 04:00 PM",
+        time: "10:00 AM to 03:00 PM",
         Date: "23rd March 2025",
         team: "Individual",
         Qr: chess_30,
