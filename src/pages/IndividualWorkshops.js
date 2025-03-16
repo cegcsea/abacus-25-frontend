@@ -262,14 +262,14 @@ const IndividualWorkshops = () => {
           {renderContent()}
 
           <div className="flex justify-center gap-3">
-            {isAuth && !isRegistered && (
+            {!workshop.closed && isAuth && !isRegistered && (
               <Link to={`/workshops/${workshop.code}/payment`}>
                 <button className="m-3 w-fit border-[#b72222] border-[1.7px] px-4 py-2 text-white duration-150 hover:bg-[#9f232363]">
                   Register {"<"}~{">"}
                 </button>
               </Link>
             )}
-            {workshop.bulkBooking &&
+            {!workshop.closed && workshop.bulkBooking &&
               isAuth &&
               ((isRegistered && bestPayment?.status === "FAILURE") ||
                 !isRegistered) && (
@@ -321,7 +321,7 @@ const IndividualWorkshops = () => {
 
           {isAuth && isRegistered && bestPayment?.status === "FAILURE" && (
             <>
-              <Link to={`/workshops/${workshop.code}/payment`}>
+              <Link to={!workshop.closed && `/workshops/${workshop.code}/payment`}>
                 <button className="m-3 w-fit border border-red-400 px-4 py-2 text-white duration-150 hover:bg-red-400/40">
                   Pay Again! {"<"}~{">"}
                 </button>
@@ -342,12 +342,17 @@ const IndividualWorkshops = () => {
             </>
           )}
 
-          {!isAuth && (
+          {!workshop.closed && !isAuth && (
             <Link to="/auth">
               <button className="m-3 w-fit border border-[#C778DD] px-4 py-2 text-white duration-150 hover:bg-[#C778DD33]">
                 Login to Register {"<"}~{">"}
               </button>
             </Link>
+          )}
+          {workshop.closed && (
+              <button className="m-3 w-fit border border-[#b72222] px-4 py-2 text-white duration-150 hover:cursor-default">
+                Registration closed {"<"}~{">"}
+              </button>
           )}
         </div>
       </div>

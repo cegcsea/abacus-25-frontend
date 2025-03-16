@@ -302,7 +302,7 @@ export const events = [
         image: img11, // Replace with your image path
         path: "/events/glitch-snitch",
         team: "1-2 members",
-        Date: "23rd March 2025",
+        Date: "22rd March 2025",
         prize: "Rs 5k",
         to: "glitch-snitch",
         rounds: [

@@ -17,6 +17,7 @@ export const WorkshopContacts = [
 
 export const workshopsReach = [
   {
+    closed:false,
     title: "Emergence of AI Engineers and Evolution of Vibe coding",
     to: "AI",
     image: UI,
@@ -54,6 +55,7 @@ export const workshopsReach = [
     ],
   },
   {
+    closed:false,
     title: "API & Kubernetes: The Dynamic Duo of Modern Tech",
     to: "api",
     image: UI2,
@@ -100,6 +102,7 @@ export const workshopsReach = [
     ],
   },
   {
+    closed:true,
     title: "Linux Networking Essentials",
     to: "linux",
     image: UI3,
