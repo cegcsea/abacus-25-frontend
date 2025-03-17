@@ -1,6 +1,6 @@
 import placement from "../assets/Reach/placement.svg";
 import UI from "../assets/images/ai.webp";
-import UI2 from "../assets/images/api&kub.webp";
+import UI2 from "../assets/images/api.webp";
 import UI3 from "../assets/images/linux.webp";
 import UI_400 from "../assets/images/workshop_qr.jpeg";
 import UI_150 from "../assets/images/150.jpeg";
@@ -54,15 +54,15 @@ export const workshopsReach = [
     ],
   },
   {
-    title: "API & Kubernetes: The Dynamic Duo of Modern Tech",
+    title: "Workshop on APIs and Building Scalable and Modular Applications",
     to: "api",
     image: UI2,
     bulkBooking: UI_1600,
     qr: UI_400,
     code: 2,
-    note: "To register for a single topic, use the provided form link. To register for both topics together, complete the registration directly on the website.",
+    //note: "To register for a single topic, use the provided form link. To register for both topics together, complete the registration directly on the website.",
     content:
-      "APIs and Kubernetes are at the heart of modern software development, powering seamless integrations and scalable cloud-native applications. This workshop brings together industry experts to explore the role of APIs and Kubernetes in building robust, efficient, and scalable systems.",
+      "Learn the fundamentals of APIs and how to design scalable, modular applications in this hands-on workshop. Explore best practices for API development, integration, and optimization to build efficient and maintainable systems.",
     contentexpand: [
       {
         heading: "Topic-1",
@@ -73,10 +73,10 @@ export const workshopsReach = [
       },
       {
         heading: "Topic-2",
-        topic: "API Avengers: Assembling Kubernetes Gateway APIs",
-        speaker: "Dhivakar Asokan,Software Development Manager, IBM",
+        topic: "Scalable Design",
+        speaker: "Anandhi Shanmugasundaram, Lead Engineer, IBM",
         title:
-          "Dive into the power of Kubernetes Gateway APIs and how they revolutionize API management and service orchestration in cloud environments.",
+          "Building Scalable and Modular Applications: Monorepos, Microservices, Micro Frontends, and Desktop/SaaS Architectures",
       },
     ],
     prerequisites:
