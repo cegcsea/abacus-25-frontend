@@ -62,7 +62,7 @@ export const workshopsReach = [
     bulkBooking: UI_1600,
     qr: UI_400,
     code: 2,
-    //note: "To register for a single topic, use the provided form link. To register for both topics together, complete the registration directly on the website.",
+    note: "To register for a single topic, use the provided form link. To register for both topics together, complete the registration directly on the website.",
     content:
       "Learn the fundamentals of APIs and how to design scalable, modular applications in this hands-on workshop. Explore best practices for API development, integration, and optimization to build efficient and maintainable systems.",
     contentexpand: [

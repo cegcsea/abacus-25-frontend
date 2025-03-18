@@ -5,8 +5,8 @@ import img4 from "../assets/images/pentacode.png";
 import img5 from "../assets/images/ML Mania.png";
 import img6 from "../assets/images/ospc.png";
 import img7 from "../assets/images/th.webp";
-import img21 from "../assets/images/codexcel.png"
-import img22 from "../assets/images/pixel.png"
+import img21 from "../assets/images/codexcel.png";
+import img22 from "../assets/images/pixel.png";
 import img8 from "../assets/images/amazon.png";
 import img9 from "../assets/images/ctrlesc.jpg";
 import img10 from "../assets/images/img10.jpg";
@@ -338,8 +338,9 @@ export const events = [
       },
       {
         id: 7,
-        title: "CodeXcelerate: CODE VELOCITY F1",
-        description: "An adrenaline-charged coding showdown where speed meets strategy. Participants face a gauntlet of challenges that test their logical thinking, accuracy, and resilience under pressure. It’s not just about writing code—it’s about racing against the clock, making smart decisions, and keeping your cool in a high-stakes environment.",
+        title: "CodeXcelerate",
+        description:
+          "An adrenaline-charged coding showdown where speed meets strategy. Participants face a gauntlet of challenges that test their logical thinking, accuracy, and resilience under pressure. It’s not just about writing code—it’s about racing against the clock, making smart decisions, and keeping your cool in a high-stakes environment.",
         image: img21, // Replace with your image path
         path: "/events/codexcelerate",
         team: "1-2 members",
@@ -380,7 +381,8 @@ export const events = [
       {
         id: 8,
         title: "Prose to Pixel",
-        description: "A dynamic fusion of logic and creativity, this event challenges participants to blend problem-solving with design thinking. With unexpected twists and imaginative tasks, it pushes boundaries and brings out the best of both technical and artistic minds. Precision, innovation, and a dash of chaos make this a truly electrifying experience.",
+        description:
+          "A dynamic fusion of logic and creativity, this event challenges participants to blend problem-solving with design thinking. With unexpected twists and imaginative tasks, it pushes boundaries and brings out the best of both technical and artistic minds. Precision, innovation, and a dash of chaos make this a truly electrifying experience.",
         image: img22, // Replace with your image path
         path: "/events/prose-to-pixel",
         team: "2-3 members",
