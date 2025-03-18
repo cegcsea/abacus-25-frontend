@@ -53,7 +53,6 @@ const sponsors = [
     logo: img4,
     description:
       "Adsprint is a professional printing service provider offering high-quality printing solutions for banners, brochures, flyers, business cards, and more. Known for their prompt service and attention to detail, Adsprint helps businesses and events create impactful printed materials.",
-    website: "https:/www.google.com/",
   },
 ];
 
@@ -87,14 +86,16 @@ const IndividualSponsors = () => {
               <div className="text-container">
                 <h1 className="title">{sponsor.name}</h1>
                 <p>{sponsor.description}</p>
-                <a
-                  href={sponsor.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="read"
-                >
-                  Visit Website
-                </a>
+                {sponsor.website && (
+                  <a
+                    href={sponsor.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="read"
+                  >
+                    Visit Website
+                  </a>
+                )}
               </div>
             </div>
           ))}
