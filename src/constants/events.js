@@ -421,7 +421,7 @@ export const events = [
         ],
       },
       {
-        id: 20,
+        id: 21,
         title: "Neonova - AU IEEE Computer Society's Ideathon",
         description:
           "Neonova is an exciting ideathon for innovators, thinkers, and problem solvers to present their creative solutions.This event will challenge participants to think critically and apply their knowledge to real-world scenarios. The competition will be conducted in two rounds.",
