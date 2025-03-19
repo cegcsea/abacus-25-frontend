@@ -428,6 +428,7 @@ export const events = [
 
         image: img23, // Replace with your image path
         path: "/events/neonova",
+        judging: true,
         // team: "2-3 members",
         Date: "23rd March 2025",
         prize: "",
@@ -493,7 +494,7 @@ export const events = [
         prize: "Rs 2.5k",
         rounds: [
           {
-            title: "Round 1 - The Ultimate Chase",
+            title: "Round  - The Ultimate Chase",
             content:
               "Gear up for an exciting adventure where every clue brings you closer to the final treasure! Teams will decode hints leading to hidden locations across the campus. At each spot, a new clue awaits, challenging your wit, teamwork, and speed. The hunt continues until the final mystery is cracked. The team that completes the journey in the shortest time will emerge as the ultimate treasure hunters! Do you have what it takes to outsmart and outrun the competition?",
             duration: "40 minutes",

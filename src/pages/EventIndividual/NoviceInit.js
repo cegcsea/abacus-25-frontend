@@ -153,7 +153,7 @@ const NoviceInit = () => {
                 ) : (
                   ""
                 )}
-                  {selectedEvent.venue ? (
+                {selectedEvent.venue ? (
                   <p>
                     <strong>Venue:</strong> {selectedEvent.venue}
                   </p>
@@ -163,6 +163,7 @@ const NoviceInit = () => {
                 {/* <p>
                   <strong>Prize:</strong> {selectedEvent.prize || "N/A"}
                 </p> */}
+              
               </div>
             )}
 
@@ -182,6 +183,7 @@ const NoviceInit = () => {
                     <p className="intern-name">{intern.name}</p>
                   </div>
                 ))}
+                
               </div>
             )}
 
@@ -206,6 +208,20 @@ const NoviceInit = () => {
                     </p> */}
                   </div>
                 ))}
+                  {selectedEvent.judging && (
+                  <p>
+                    <strong>Judging Criteria:</strong> 
+                    <p>
+
+1. Innovation & Creativity<br/>
+
+2. Feasibility & Practicality<br/>
+
+3. Presentation & Clarity<br/>
+
+4. Adaptability & Problem-Solving (Round 2)</p>
+                  </p>
+                )}
               </div>
             )}
             <div className="flex justify-center">
@@ -301,7 +317,7 @@ const NoviceInit = () => {
       </div>
 
       {selectedEvent.contact?.length > 0 && (
-        <Contact contacts={selectedEvent.contact} category={"events"}/>
+        <Contact contacts={selectedEvent.contact} category={"events"} />
       )}
     </div>
   );
