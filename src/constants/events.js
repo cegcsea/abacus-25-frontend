@@ -429,8 +429,8 @@ export const events = [
         image: img23, // Replace with your image path
         path: "/events/neonova",
         judging: true,
-        // team: "2-3 members",
-        Date: "23rd March 2025",
+        team: "3 members",
+        Date: "22nd March 2025",
         prize: "",
         to: "neonova",
         rounds: [
@@ -438,16 +438,16 @@ export const events = [
             title: "Round 1 - PPT Presentation",
             content:
               "Participants will be given a predefined question or problem statement. Each team will prepare and present a PowerPoint presentation (PPT) outlining their idea, solution, and implementation plan. Judges will evaluate the presentations based on creativity, feasibility, impact, and clarity. A time limit of [X minutes] will be provided for each presentation, followed by a short Q&A session. The best teams will advance to Round 2.",
-            // duration: "1 hour",
-            // time: "10:00 AM to 11:00 AM",
+            duration: "3 hours 30 minutes",
+            time: "09:00 AM to 12:30 PM",
             // venue: "Main Building Room No 238",
           },
           {
             title: "Round 2 - Live Scenario Solving",
             content:
               "Selected teams will be put to the test by engaging in an interactive challenge. Other participants or judges will provide a use case or a real-world scenario related to the original problem statement. The presenting team must analyze the scenario on the spot, propose a solution, and explain its feasibility. The explanation should be clear, logical, and convincing. Judges will assess the teams based on their problem-solving skills, adaptability, and presentation effectiveness.",
-            // duration: "1 hour 30 minutes",
-            // time: "11:30 AM to 01:00 PM",
+            duration: "2 hours",
+            time: "01:30 PM to 03:30 PM",
             // venue: "Main Building Room No 238",
           },
         ],
