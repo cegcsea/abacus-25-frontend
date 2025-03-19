@@ -3,8 +3,11 @@ import spon1 from "../assets/Sponsors/spon11.jpg";
 import spon3 from "../assets/Sponsors/tmb.png";
 import e2w from "../assets/Reach/e2w.png";
 import IndividualSponsors from "./IndividualSponsors";
+import img6 from "../assets/images/jamboree.png";
 import img7 from "../assets/Sponsors/int_buddy.png";
 import img8 from "../assets/images/jamboree.png";
+import img4 from "../assets/images/123.avif";
+import img2 from "../assets/images/aladi.jpeg";
 
 import { Link } from "react-router-dom";
 //import "../styles/Navbar.css";
@@ -15,8 +18,9 @@ const Sponsors = () => {
 
     { image: spon3, name: "TMB", desc: "REACH'25 Sponsor" },
     { image: img7, name: "Interview buddy", desc: "Coupon Sponsor" },
-   
-
+    { image: img6, name: "Jamboree", desc: "Educational Partner" },
+    { image: img4, name: "Adsprint", desc: "Printing Partner" },
+    { image: img2, name: "Aaladipattiyan", desc: "Refreshment Partner" },
   ];
 
   return (
@@ -25,7 +29,7 @@ const Sponsors = () => {
         Sponsors
       </h1>
 
-      <div className="flex flex-col justify-between lg:flex-row mx-auto overflow-clip bg-black w-[100%]">
+      <div className="flex flex-col flex-wrap justify-between lg:flex-row mx-auto overflow-clip bg-black w-[100%]">
         {sponsors.map((sponsor, index) => (
           <div
             key={index}
