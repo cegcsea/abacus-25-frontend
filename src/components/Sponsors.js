@@ -29,7 +29,7 @@ const Sponsors = () => {
         Sponsors
       </h1>
 
-      <div className="flex flex-col flex-wrap justify-between lg:flex-row mx-auto overflow-clip bg-black w-[100%]">
+      <div className="flex flex-col flex-wrap  justify-between lg:flex-row mx-auto overflow-clip bg-black w-[100%]">
         {sponsors.map((sponsor, index) => (
           <div
             key={index}

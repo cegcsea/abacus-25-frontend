@@ -7,7 +7,7 @@ import img6 from "../assets/images/ospc.png";
 import img7 from "../assets/images/th.webp";
 import img21 from "../assets/images/codexcel.png";
 import img22 from "../assets/images/pixel.png";
-import img8 from "../assets/images/amazon.png";
+import img23 from "../assets/images/ideathon.webp";
 import img9 from "../assets/images/ctrlesc.jpg";
 import img10 from "../assets/images/img10.jpg";
 import img11 from "../assets/images/img11.jpg";
@@ -343,7 +343,7 @@ export const events = [
           "An adrenaline-charged coding showdown where speed meets strategy. Participants face a gauntlet of challenges that test their logical thinking, accuracy, and resilience under pressure. It’s not just about writing code—it’s about racing against the clock, making smart decisions, and keeping your cool in a high-stakes environment.",
         image: img21, // Replace with your image path
         path: "/events/codexcelerate",
-        team: "1-2 members",
+        team: "2 members",
         Date: "23rd March 2025",
         prize: "",
         to: "codexcelerate",
@@ -417,6 +417,49 @@ export const events = [
             id: 2,
             name: "Akshaya",
             phone: "9342583181",
+          },
+        ],
+      },
+      {
+        id: 20,
+        title: "Neonova - AU IEEE Computer Society's Ideathon",
+        description:
+          "Neonova is an exciting ideathon for innovators, thinkers, and problem solvers to present their creative solutions.This event will challenge participants to think critically and apply their knowledge to real-world scenarios. The competition will be conducted in two rounds.",
+
+        image: img23, // Replace with your image path
+        path: "/events/neonova",
+        // team: "2-3 members",
+        Date: "23rd March 2025",
+        prize: "",
+        to: "neonova",
+        rounds: [
+          {
+            title: "Round 1 - PPT Presentation",
+            content:
+              "Participants will be given a predefined question or problem statement. Each team will prepare and present a PowerPoint presentation (PPT) outlining their idea, solution, and implementation plan. Judges will evaluate the presentations based on creativity, feasibility, impact, and clarity. A time limit of [X minutes] will be provided for each presentation, followed by a short Q&A session. The best teams will advance to Round 2.",
+            // duration: "1 hour",
+            // time: "10:00 AM to 11:00 AM",
+            // venue: "Main Building Room No 238",
+          },
+          {
+            title: "Round 2 - Live Scenario Solving",
+            content:
+              "Selected teams will be put to the test by engaging in an interactive challenge. Other participants or judges will provide a use case or a real-world scenario related to the original problem statement. The presenting team must analyze the scenario on the spot, propose a solution, and explain its feasibility. The explanation should be clear, logical, and convincing. Judges will assess the teams based on their problem-solving skills, adaptability, and presentation effectiveness.",
+            // duration: "1 hour 30 minutes",
+            // time: "11:30 AM to 01:00 PM",
+            // venue: "Main Building Room No 238",
+          },
+        ],
+        contact: [
+          {
+            id: 1,
+            name: "Nitin S V",
+            phone: "91765 41779",
+          },
+          {
+            id: 2,
+            name: "Ajay Krishna",
+            phone: "70107 07652",
           },
         ],
       },
