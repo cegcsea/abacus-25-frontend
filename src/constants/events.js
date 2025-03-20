@@ -568,7 +568,7 @@ export const events = [
       {
         id: 11,
         title: "CHATGPT PULSE",
-        time: "01:30 PM to 04:00 PM",
+        time: "09:00AM to 12:00PM",
         Date: "23rd March 2025",
         team: "1-2 members",
         description:
