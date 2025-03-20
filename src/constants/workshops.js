@@ -9,7 +9,7 @@ import UI_1600 from "../assets/images/UI_1600.jpg";
 export const WorkshopContacts = [
   {
     id: 1,
-    name: "Pooja",
+    name: "Poojaa",
     phone: "+91 7558121642",
   },
   { id: 2, name: "Ragul", phone: "+91 9361469631" },
@@ -17,7 +17,7 @@ export const WorkshopContacts = [
 
 export const workshopsReach = [
   {
-    closed:false,
+    closed: false,
     title: "Emergence of AI Engineers and Evolution of Vibe coding",
     to: "AI",
     image: UI,
@@ -56,7 +56,7 @@ export const workshopsReach = [
   },
   {
     title: "Workshop on APIs and Building Scalable and Modular Applications",
-    closed:false,
+    closed: false,
     to: "api",
     image: UI2,
     bulkBooking: UI_1600,
@@ -102,7 +102,7 @@ export const workshopsReach = [
     ],
   },
   {
-    closed:true,
+    closed: true,
     title: "Linux Networking Essentials",
     to: "linux",
     image: UI3,
