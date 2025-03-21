@@ -260,7 +260,7 @@ export const events = [
         image: img10, // Replace with your image path
         path: "/events/ready-set-hire",
         team: "Individual",
-        Date: "23rd March 2025",
+        Date: "21 and 23rd March 2025",
         prize: "Rs 7k",
         to: "ready-set-hire",
         rounds: [
@@ -269,7 +269,7 @@ export const events = [
             content:
               "Step into the shoes of a job applicant and take on a rigorous screening test designed to evaluate your aptitude, programming knowledge, and problem-solving skills. This round will challenge you with a mix of logical reasoning, quantitative aptitude, and coding questions—just like the first step of a real-world hiring process. Only the most promising candidates will move forward to the interview round!",
             duration: "50 mins (Online)",
-            time: "09:00 AM to 12:30 PM",
+            time: "08:30 PM to 10:30 PM",
             // venue: "Main Building Room No 238",
           },
           {
@@ -277,7 +277,7 @@ export const events = [
             content:
               "Face the ultimate test in a realistic mock interview setting! Participants will be evaluated on their technical expertise, problem-solving approach, and communication skills. Expect coding challenges, scenario-based questions, and real-world problem-solving discussions, all designed to simulate an actual job interview experience. Are you ready to impress and prove you're hire-ready?",
             duration: "35 mins",
-            time: "01:30 PM to 03:00 PM",
+            time: "09:00 AM to 12:00 PM",
             // venue: "Main Building Room No 238",
           },
         ],
