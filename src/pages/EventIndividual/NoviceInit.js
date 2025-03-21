@@ -163,7 +163,6 @@ const NoviceInit = () => {
                 {/* <p>
                   <strong>Prize:</strong> {selectedEvent.prize || "N/A"}
                 </p> */}
-              
               </div>
             )}
 
@@ -183,7 +182,6 @@ const NoviceInit = () => {
                     <p className="intern-name">{intern.name}</p>
                   </div>
                 ))}
-                
               </div>
             )}
 
@@ -208,18 +206,18 @@ const NoviceInit = () => {
                     </p> */}
                   </div>
                 ))}
-                  {selectedEvent.judging && (
+                {selectedEvent.judging && (
                   <p>
-                    <strong>Judging Criteria:</strong> 
+                    <strong>Judging Criteria:</strong>
                     <p>
-
-1. Innovation & Creativity<br/>
-
-2. Feasibility & Practicality<br/>
-
-3. Presentation & Clarity<br/>
-
-4. Adaptability & Problem-Solving (Round 2)</p>
+                      1. Innovation & Creativity
+                      <br />
+                      2. Feasibility & Practicality
+                      <br />
+                      3. Presentation & Clarity
+                      <br />
+                      4. Adaptability & Problem-Solving (Round 2)
+                    </p>
                   </p>
                 )}
               </div>
@@ -242,7 +240,7 @@ const NoviceInit = () => {
               {!isAuth && (
                 <button
                   className="m-3 w-fit border border-[#c72727] px-4 py-2 text-white duration-150 hover:bg-[#ff4d4d]"
-                  onClick={() => navigate("/login")}
+                  onClick={() => navigate("/auth")}
                 >
                   Login to Register{"<"}~{">"}
                 </button>
